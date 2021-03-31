@@ -10,6 +10,7 @@ const PORT = 3000;
 // 앱세팅
 app.set("views","./src/views");
 app.set("view engine","ejs");
+app.use(express.static(`${__dirname}/src/public`));
 
 
 app.use("/",home); // use -> 미들웨어를 등록하는 메소드
