@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            header{
+                display: block;
+            }
+        </style>
         <title>Fast Food : 메인 페이지</title>
         <!--Category-->
         <link type="text/css" rel="stylesheet" href="category.css">
@@ -10,16 +15,60 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     </head>
 <body>
-    <div>
-        <img src="" alt="Fast Food Logo">
-    </div>
     <div id="userMenu">
         <ul class="menu_list">
             <!--회원가입 , 로그인 버튼을 누르면 그 페이지로 안내해준다.-->
-            <li>회원가입</li>
-            <li>로그인</li>
+            <li>
+                <a href="">
+                회원가입
+                </a>
+            </li>
+            <li>
+                <a href="">
+                로그인
+                </a>
+            </li>
         </ul>
     </div>
+    <div id="page-wrapper">
+        <!-- Header -->
+            <div id="header-wrapper">
+                <header id="header" class="container">
+
+                    <!-- Logo -->
+                        <div id="logo">
+                            <h1><a href="Main.html">FastFood</a></h1>
+                            <span>by Hojin Minho</span>
+                        </div>
+
+                    <!-- Nav -->
+                        <nav id="nav">
+                            <ul>
+                                <li class="current"><a href="Main.html">Welcome</a></li>
+                                <li>
+                                    <a href="#">카테고리</a>
+                                    <ul>
+                                        <li><a href="#">신선</a></li>
+                                        <li><a href="#">야채</a></li>
+                                        <li>
+                                            <a href="#">축산</a>
+                                            <ul>
+                                                <li><a href="#">고기</a></li>
+                                                <li><a href="#">Phasellus consequat</a></li>
+                                                <li><a href="#">Magna phasellus</a></li>
+                                                <li><a href="#">Etiam dolore nisl</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">수산</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../NewProduct/NewProductPage.html">신상품</a></li>
+                                <li><a href="../Best/BestPage.html/">베스트</a></li>
+                                <li><a href="../Money/MonthMoney.html">이달의 돈쭐</a></li>
+                            </ul>
+                        </nav>
+                </header>
+            </div>
     <div>
         <div id="category">
             <ul>
@@ -30,7 +79,7 @@
                     </a>
                 </li>
                 <li class="menu_category">
-                    <a href="Best/BestPage.html">
+                    <a href="../Best/BestPage.html">
                     베스트
                     </a>
                 </li>

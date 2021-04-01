@@ -2,3 +2,103 @@
   float: right;
   width: 100%;
 }
+#userMenu .menu_list {
+  position: relative;
+  left: 20px;
+}
+#main-wrapper {
+  background: #fff;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
+  padding: 5em 0 5em 0;
+}
+
+#header-wrapper {
+  padding: 4.5em 0 3em 0;
+}
+#header {
+  position: relative;
+}
+/* Logo */
+
+#logo {
+  display: inline-block;
+  width: 235.02px;
+  height: 59px;
+}
+
+#logo h1 {
+  background: #ff4486;
+  color: #fff;
+  border-radius: 6px;
+  font-family: "Oleo Script", serif;
+  font-weight: 400;
+  padding: 0.25em 0.2em 0.25em 0.2em;
+  font-size: 3.25em;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#logo span {
+  font-weight: 800;
+  line-height: 4.5em;
+  letter-spacing: 0.025em;
+  font-size: 0.9em;
+  vertical-align: middle;
+  margin: 0 0 0 1.25em;
+}
+
+/* Nav */
+
+#nav {
+  position: absolute;
+  right: 100px;
+  top: 35px;
+  font-size: 0.9em;
+  width: 628.58px;
+  height: 59px;
+}
+
+#nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#nav ul li {
+  float: left;
+  line-height: 4.5em;
+  padding-left: 1.5em;
+}
+
+#nav ul li a,
+#nav ul li span {
+  -moz-transition: background-color 0.25s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -ms-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+  font-weight: 800;
+  letter-spacing: 0.025em;
+  color: #696969;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+#nav ul li > ul {
+  display: none;
+}
+
+#nav ul li:hover a,
+#nav ul li:hover span {
+  background: #fff;
+}
+
+#nav ul li.active a,
+#nav ul li.active span {
+  background: #fff;
+}
+
+#nav ul li.current a {
+  background: #444;
+  color: #fff;
+}
