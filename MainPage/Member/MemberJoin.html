@@ -1,3 +1,14 @@
+<!-- 
+    2021 04 03 오븐 양식에 맞게 수정작업
+    -> 오븐 양식에 맞게 작업 진행중   
+    1. 비밀번호 입력시 오류 및 불일치시 arlert 작업 완료
+    2. 생년월일 날짜 작업 완료
+    3. 배송지 우편번호 입력폼이 아닌 선택폼으로 작업 진행중
+    
+
+ -->
+
+
 
 <!DOCTYPE html>
 <html lang="ko-KR"> 
@@ -26,6 +37,7 @@
             /*   resize: horizontal; // 가로크기만 조절가능 
 	        resize: vertical;  세로크기만 조절가능  */
         }
+        
 </style>
 
 <html>
@@ -44,23 +56,21 @@
 <label >회원 기본 정보</label><br>
 <label>아이디</label> <br>
 <label><input  type="text" name="LogID" >&nbsp;&nbsp;<button class = "btn_click" id = "btnIDCheck">중복확인</button>
-    &nbsp;&nbsp;4~12자의 영문 대소문자와 숫자로만 입력</label> <br>
+    &nbsp;&nbsp;4~12자의 영문 대소문자와 숫자로만 입력</label> <br><br>
 <label>
     <label>비밀번호</label><br>
     <input id ="password1" name = "password1"  type="password" >
-    &nbsp;&nbsp; 6~16자의 영문 대소문자와 숫자로만 입력<br>
+    &nbsp;&nbsp; 6~16자의 영문 대소문자와 숫자로만 입력<br><br>
 </label>
 
 <label>
 <label>비밀번호 확인</label><br>
     <input id = "password2" name = "password2" type="password">&nbsp;&nbsp;
-    <button class = "btn_click" id ="btnCheck">확인</button><br>
+    <button class = "btn_click" id ="btnCheck">확인</button>    
 </label>
 <div id = "checkCircle"></div>
-<h4 id = "checkText"></h4>
-<div>
-    
-</div> 
+<p id = "checkText"></p><br><br>
+
     <script language="javascript" type = "text/javascript">
     window.onload = function(){
         // pwd1 과 pwd2를 text비교
@@ -99,11 +109,70 @@
    
 
 <label>전화번호</label> <br>
-<label> <input type = "tel" name ="tel" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" placeholder = "ex)00*-000*-0000"/> &nbsp;&nbsp;예)010-xxxx-xxxx</label> <br>
+<label> <input type="text" id="phoneNum" maxlength="13"> &nbsp;&nbsp;</label> <br><br>
 <label>이름</label> <br>
-<label><input type="text" name="mail"> &nbsp;&nbsp;예) id@domain.com</label> <br><br>
-<label>생년월일</label> <br>
-<label><input type="text" name="mail"> &nbsp;&nbsp;예) id@domain.com</label> <br><br>
+<label><input type="text" name="mail"> &nbsp;&nbsp;</label> <br><br>
+<label>생년월일</label> <br> 
+      <select name="year" id = "yearValue">
+        <option value="">-- 선택 --</option>
+        <option value="1995">1995</option>
+        <option value="1996">1996</option>
+        <option value="1997">1997</option>
+        <option value="1998">1998</option>
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+      </select>
+      <select name="month" id = "monthValue">
+        <option value="">-- 선택 --</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <select name="day" id = "dayValue">
+        <option value="">-- 선택 --</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+      </select>
+      <br><br>
+
 <label>성별</label>&nbsp;&nbsp;
 <label><input type = "radio" name = "성별" value = "in"/>여성
     <input type = "radio" name = "성별" value = "out"/>남성 </label><br><br>
