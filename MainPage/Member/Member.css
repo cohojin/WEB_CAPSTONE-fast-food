@@ -3,7 +3,7 @@ a {
     text-decoration: none;
 }
 input {
-    -webkit-writing-mode: horizontal-tb !important;
+   
     text-rendering: auto;
     color: initial;
     letter-spacing: normal;
@@ -14,7 +14,7 @@ input {
     display: inline-block;
     text-align: start;
     -webkit-appearance: textfield;
-    background-color:white;
+    background-color:rgb(255, 255, 255);
     -webkit-rtl-ordering: logical;
     cursor: text;
     margin: 0em;
