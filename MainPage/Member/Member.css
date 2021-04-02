@@ -70,6 +70,7 @@ fieldset, img {
 .login_tistory .inp_text+.inp_text {
     border-top: 1px solid #ddd;
 }
+
 .inp_text input {
     display: block;
     width: 100%;
@@ -86,8 +87,16 @@ fieldset, img {
     margin: 20px 0 0;
     width: 300px;
     height: 48px;
-    border-radius: 3px;
+    border-radius: 8px;
     font-size: 16px;
+    color: #fff;
+    background-color: purple;
+}
+.btn_click  {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 11px;
     color: #fff;
     background-color: purple;
 }

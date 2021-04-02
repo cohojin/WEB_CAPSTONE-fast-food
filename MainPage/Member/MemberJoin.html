@@ -1,5 +1,7 @@
 
 <!DOCTYPE html>
+<html lang="ko-KR"> 
+<meta charset="UTF-8"> 
 <style type="text/css">
     @import url("Member.css");
     #checkCircle{
@@ -12,6 +14,14 @@
         #checkText{
             display: inline-block;
         }
+        #wrapper{
+            position : center;
+            width: 720px;
+            left: 50%;
+            margin-left: 360px;
+        
+
+        }
 </style>
 
 <html>
@@ -19,30 +29,37 @@
 <title>회원가입</title>
 </head> 
 <body> 
-<!-- <form action="mailto:jessicasla@nate.com?subject=회원 가입" enctype="text/plain" method="post">  -->
+<!-- <form action="mailto:rlaalsgh9511@daum.net?subject=회원 가입" enctype="text/plain" method="post">  -->
 <!--밑에 submit 누르면 메일로 보내짐-->
 
 
 <!-- <form method="post" id="authForm" action="https://www.tistory.com/auth/login"></formmethod> -->
 <!-- <input type="hidden" name="redirectUrl" value="https://blogpack.tistory.com/manage"> -->
 <fieldset>
+    <div id = "wrapper">
 <p class = "inp_chk" colspan="2">회원 기본 정보</p>
 </p>
 
 <p>아이디</p> 
-<p><input size="15" type="text" name="id"> 
-4~12자의 영문 대소문자와 숫자로만 입력</p> 
-<p>비밀번호</p>
-<p><label><input size="15" type="password" id ="pwd1">
-</label>4~12자의 영문 대소문자와 숫자로만 입력</p> 
-<p>비밀번호 확인</p> 
-<label><input size="15" type="password" id = "pwd2"></label>
+<p><input  type="text" name="LogID" >&nbsp;&nbsp;<button class = "btn_click" id = "btnIDCheck">중복확인</button>
+    &nbsp;&nbsp;4~12자의 영문 대소문자와 숫자로만 입력</p> 
+<label>
+    <p>비밀번호</p>
+    <input id ="password1" name = "password1"  type="password" >
+    &nbsp;&nbsp; 6~16자의 영문 대소문자와 숫자로만 입력
+</label>
+
+<label>
+<p>비밀번호 확인</p>
+    <input id = "password2" name = "password2" type="password">&nbsp;&nbsp;
+    <button class = "btn_click" id ="btnCheck">확인</button>
+</label>
 <div id = "checkCircle"></div>
 <h4 id = "checkText"></h4>
 <div>
-    <button id ="btnCheck">확인</button>
+    
 </div> 
-    <script type = "text/javascript">
+    <script language="javascript" type = "text/javascript">
     window.onload = function(){
         // pwd1 과 pwd2를 text비교
         // 확인 버튼에 클릭 이벤트 처리하기
@@ -51,23 +68,27 @@
 
         btnCheck.onclick = function(){
             //checkCircle, checkText 속성변경
-            var pass1 = document.getElementById("pwd1");
-            var pass2 = document.getElementById("pwd2");
-            var pass1Value = String(pass1.Value);
-            var pass2Value = String(pass2.Value);
+            var pass1 = document.getElementById('password1').value;
+            var pass2 = document.getElementById('password2').value;
             var checkCircle = document.getElementById("checkCircle");
             var checkText = document.getElementById("checkText");
 
+            if(pass1.length < 6 || pass1.length>16){
+                window.alert('비밀번호는 6글자 이상, 16글자 이하만 이용 가능합니다.');
+                document.getElementById('password1').value='';
+            }
+
             //if 문으로 조건 검색
-            if(pass1Value == pass2Value){
+            if(pass1 == pass2){
                 //비밀번호 입력창이 같으면
                 checkCircle.style.backgroundColor = "green";
-                checkText.innerHTML = "비밀번호가 일치 합니다. "+pass2Value+pass1Value;
+                checkText.innerHTML = "비밀번호가 일치 합니다. ";
             }
             else{
                 //비밀번호 입력창이 다르면
                 checkCircle.style.backgroundColor = "red";
-                checkText.innerHTML = "비밀번호가 일치하지 않습니다."+pass2Value+pass1Value;
+                checkText.innerHTML = "비밀번호가 일치하지 않습니다.";
+                alert('비밀번호가 일치하지 않습니다.'); 
             }
         }
     }
@@ -76,9 +97,9 @@
    
 
 <p>핸드폰 번호</p> 
-<p><input type="text" name="mail"> 예)010-xxxx-xxxx</p> 
+<p><input type="text" name="mail"> &nbsp;&nbsp;예)010-xxxx-xxxx</p> 
 <p>메일 주소</p> 
-<p><input type="text" name="mail"> 예) id@domain.com</p> 
+<p><input type="text" name="mail"> &nbsp;&nbsp;예) id@domain.com</p> 
 
 
 <p>이름</p> 
@@ -91,7 +112,7 @@
     </p> 
     
 </fieldset>
-</form> 
+</div>
 
 
 </body> 
