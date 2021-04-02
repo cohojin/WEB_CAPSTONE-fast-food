@@ -15,12 +15,16 @@
             display: inline-block;
         }
         #wrapper{
-            position : center;
-            width: 720px;
-            left: 50%;
-            margin-left: 360px;
-        
-
+            /* float: left; */
+            display: table; margin-left: auto; margin-right: auto;
+            
+        }
+        textarea{
+	        width:300px; 
+	        height:100px; 
+            resize:none;/* 크기고정 */ 
+            /*   resize: horizontal; // 가로크기만 조절가능 
+	        resize: vertical;  세로크기만 조절가능  */
         }
 </style>
 
@@ -36,23 +40,21 @@
 <!-- <form method="post" id="authForm" action="https://www.tistory.com/auth/login"></formmethod> -->
 <!-- <input type="hidden" name="redirectUrl" value="https://blogpack.tistory.com/manage"> -->
 <fieldset>
-    <div id = "wrapper">
-<p class = "inp_chk" colspan="2">회원 기본 정보</p>
-</p>
-
-<p>아이디</p> 
-<p><input  type="text" name="LogID" >&nbsp;&nbsp;<button class = "btn_click" id = "btnIDCheck">중복확인</button>
-    &nbsp;&nbsp;4~12자의 영문 대소문자와 숫자로만 입력</p> 
+<div id = "wrapper">
+<label >회원 기본 정보</label><br>
+<label>아이디</label> <br>
+<label><input  type="text" name="LogID" >&nbsp;&nbsp;<button class = "btn_click" id = "btnIDCheck">중복확인</button>
+    &nbsp;&nbsp;4~12자의 영문 대소문자와 숫자로만 입력</label> <br>
 <label>
-    <p>비밀번호</p>
+    <label>비밀번호</label><br>
     <input id ="password1" name = "password1"  type="password" >
-    &nbsp;&nbsp; 6~16자의 영문 대소문자와 숫자로만 입력
+    &nbsp;&nbsp; 6~16자의 영문 대소문자와 숫자로만 입력<br>
 </label>
 
 <label>
-<p>비밀번호 확인</p>
+<label>비밀번호 확인</label><br>
     <input id = "password2" name = "password2" type="password">&nbsp;&nbsp;
-    <button class = "btn_click" id ="btnCheck">확인</button>
+    <button class = "btn_click" id ="btnCheck">확인</button><br>
 </label>
 <div id = "checkCircle"></div>
 <h4 id = "checkText"></h4>
@@ -96,27 +98,38 @@
     
    
 
-<p>핸드폰 번호</p> 
-<p><input type="text" name="mail"> &nbsp;&nbsp;예)010-xxxx-xxxx</p> 
-<p>메일 주소</p> 
-<p><input type="text" name="mail"> &nbsp;&nbsp;예) id@domain.com</p> 
+<label>전화번호</label> <br>
+<label> <input type = "tel" name ="tel" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" placeholder = "ex)00*-000*-0000"/> &nbsp;&nbsp;예)010-xxxx-xxxx</label> <br>
+<label>이름</label> <br>
+<label><input type="text" name="mail"> &nbsp;&nbsp;예) id@domain.com</label> <br><br>
+<label>생년월일</label> <br>
+<label><input type="text" name="mail"> &nbsp;&nbsp;예) id@domain.com</label> <br><br>
+<label>성별</label>&nbsp;&nbsp;
+<label><input type = "radio" name = "성별" value = "in"/>여성
+    <input type = "radio" name = "성별" value = "out"/>남성 </label><br><br>
+<label>배송지</label> <br>
+<label><textarea name = "comment" cols ="50" rows="6" placeholder = "배송지를 상세하게 적어주세요"></textarea></label><br><br>
+<!-- 주소지 입력 폼으로 입력 준비중  -->
+<label>우편번호</label> <br>
+<label><input type="text" name="mail"> &nbsp;&nbsp;예) id@domain.com</label><br> <br>
 
 
-<p>닉네임</p>
-<p><input type="text" name="name">
+
+
+
+<label>닉네임</label><br>
+<label><input type="text" name="name">
     &nbsp;&nbsp;<button class = "btn_click" id = "btnIDCheck">중복확인</button>
-</p> 
-    <p> 
+</label> <br>
+    <label> 
         
         <button type="submit" class="btn_login"  >회원가입</button>
             <!--누르면 메일이 보내짐--> 
         
-    </p> 
+    </label> <br>
     
+</div>   
 </fieldset>
-</div>
-
-
 </body> 
 </html>
 
