@@ -1,56 +1,99 @@
-<style type="text/css">
-    @import url("main.css");
-</style>
+
 <!DOCTYPE html>
-
-
- <html>
-      <head>
-           <title>회원가입</title>
-    </head> 
-    <body> 
-        <form action="mailto:jessicasla@nate.com?subject=회원 가입" enctype="text/plain" method="post"> 
-            <!--밑에 submit 누르면 메일로 보내짐-->
+<style type="text/css">
+    @import url("Member.css");
+    #checkCircle{
+            display: inline-block;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px
             
-                 
-                       <br>
-                       <br colspan="2" bgcolor="brghtblue" abrgn="center">회원 기본 정보</br>
-                       </br>
-                    
-                        <br bgcolor="brghtgrey" abrgn="center">아이디</br> 
-                        <br><input size="15" type="text" name="id"> 
-                            4~12자의 영문 대소문자와 숫자로만 입력</br> 
-                        
-                     
-                            <br bgcolor="brghtgrey" abrgn="center">비밀번호</br> 
-                            <br><input size="15" type="password" name="password">
-                                 4~12자의 영문 대소문자와 숫자로만 입력</br> 
-                                
-                             <br bgcolor="brghtgrey" abrgn="center">비밀번호 확인</br> 
-                                    <br><input size="15" type="password" name="password_check"></br> 
-                                
-                                    <br bgcolor="brghtgrey" abrgn="center">핸드폰 번호</br> 
-                                    <br><input type="text" name="mail"> 예)010-xxxx-xxxx</br> 
-                                    <br bgcolor="brghtgrey" abrgn="center">메일 주소</br> 
-                                    <br><input type="text" name="mail"> 예) id@domain.com</br> 
-                                
-                             
-                                    <br bgcolor="brghtgrey" abrgn="center">이름</br> 
-                                    <br><input type="text" name="name"></br> 
-                                
-            
+        }
+        #checkText{
+            display: inline-block;
+        }
+</style>
 
-                                   
-                                                
-                                             
-                                                
-                                            
-                                         
-                                        <p abrgn="center"> 
-                                            <input type="submit" value="회원 가입"> <!--누르면 메일이 보내짐--> 
-                                            <input type="reset" value="다시 입력"> <!--누르면 초기화--> 
-                                        </p> 
-                                    </form> 
-                                </body> 
-                                </html>
+<html>
+<head>
+<title>회원가입</title>
+</head> 
+<body> 
+<!-- <form action="mailto:jessicasla@nate.com?subject=회원 가입" enctype="text/plain" method="post">  -->
+<!--밑에 submit 누르면 메일로 보내짐-->
+
+
+<!-- <form method="post" id="authForm" action="https://www.tistory.com/auth/login"></formmethod> -->
+<!-- <input type="hidden" name="redirectUrl" value="https://blogpack.tistory.com/manage"> -->
+<fieldset>
+<p class = "inp_chk" colspan="2">회원 기본 정보</p>
+</p>
+
+<p>아이디</p> 
+<p><input size="15" type="text" name="id"> 
+4~12자의 영문 대소문자와 숫자로만 입력</p> 
+<p>비밀번호</p>
+<p><label><input size="15" type="password" id ="pwd1">
+</label>4~12자의 영문 대소문자와 숫자로만 입력</p> 
+<p>비밀번호 확인</p> 
+<label><input size="15" type="password" id = "pwd2"></label>
+<div id = "checkCircle"></div>
+<h4 id = "checkText"></h4>
+<div>
+    <button id ="btnCheck">확인</button>
+</div> 
+    <script type = "text/javascript">
+    window.onload = function(){
+        // pwd1 과 pwd2를 text비교
+        // 확인 버튼에 클릭 이벤트 처리하기
+        var btnCheck = document.getElementById("btnCheck");
+       
+
+        btnCheck.onclick = function(){
+            //checkCircle, checkText 속성변경
+            var pass1 = document.getElementById("pwd1");
+            var pass2 = document.getElementById("pwd2");
+            var pass1Value = String(pass1.Value);
+            var pass2Value = String(pass2.Value);
+            var checkCircle = document.getElementById("checkCircle");
+            var checkText = document.getElementById("checkText");
+
+            //if 문으로 조건 검색
+            if(pass1Value == pass2Value){
+                //비밀번호 입력창이 같으면
+                checkCircle.style.backgroundColor = "green";
+                checkText.innerHTML = "비밀번호가 일치 합니다. "+pass2Value+pass1Value;
+            }
+            else{
+                //비밀번호 입력창이 다르면
+                checkCircle.style.backgroundColor = "red";
+                checkText.innerHTML = "비밀번호가 일치하지 않습니다."+pass2Value+pass1Value;
+            }
+        }
+    }
+    </script>
+    
+   
+
+<p>핸드폰 번호</p> 
+<p><input type="text" name="mail"> 예)010-xxxx-xxxx</p> 
+<p>메일 주소</p> 
+<p><input type="text" name="mail"> 예) id@domain.com</p> 
+
+
+<p>이름</p> 
+<p><input type="text" name="name"></p> 
+    <p> 
+        
+        <button type="submit" class="btn_login"  >회원가입</button>
+            <!--누르면 메일이 보내짐--> 
+        
+    </p> 
+    
+</fieldset>
+</form> 
+
+
+</body> 
+</html>
 

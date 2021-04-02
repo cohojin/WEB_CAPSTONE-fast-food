@@ -1,0 +1,24 @@
+<!DOCTYPE HTML> 
+<html lang="ko-KR"> 
+<head> 
+<meta charset="UTF-8"> 
+<title></title> 
+<script> 
+var myPwd = "12345678"; 
+function pwdChk() { 
+  var pwd = document.getElementById('pwd'); 
+  if(pwd.value == myPwd) { 
+    location.href="http://www.naver.com"; 
+    return true; 
+    }else { 
+    alert('비밀번호가 다릅니다.'); 
+    return false; 
+ } 
+} 
+</script> 
+</head> 
+<body> 
+비밀번호 : <input type="password" name="pwd" id="pwd" /> 
+<button onclick="pwdChk()">비밀번호 확인</button> 
+</body> 
+</html> 

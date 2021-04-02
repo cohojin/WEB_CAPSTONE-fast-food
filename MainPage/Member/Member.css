@@ -14,7 +14,7 @@ input {
     display: inline-block;
     text-align: start;
     -webkit-appearance: textfield;
-    background-color: white;
+    background-color:white;
     -webkit-rtl-ordering: logical;
     cursor: text;
     margin: 0em;
@@ -25,6 +25,7 @@ input {
     border-color: initial;
     border-image: initial;
 }
+
 .inner_login {
     position: absolute;
     left: 50%;
@@ -80,14 +81,15 @@ fieldset, img {
     -webkit-appearance: none;
     background-color: transparent;
 }
-.btn_login {
+.btn_login  {
+    
     margin: 20px 0 0;
-    width: 100%;
+    width: 300px;
     height: 48px;
     border-radius: 3px;
     font-size: 16px;
     color: #fff;
-    background-color: #000;
+    background-color: purple;
 }
 .login_append {
     overflow: hidden;
@@ -133,3 +135,10 @@ fieldset, img {
     float: right;
     color: #777;
 }
+/* input[type="button"]:active,
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		button:active,
+		.button:active {
+			background: #20b0e5;
+		} */
