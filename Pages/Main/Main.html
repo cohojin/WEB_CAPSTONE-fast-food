@@ -1,99 +1,172 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            header{
-                display: block;
-            }
-        </style>
-        <title>Fast Food : 메인 페이지</title>
-        <!--Category-->
-        <link type="text/css" rel="stylesheet" href="category.css">
-        <!--UserMenu-->
-        <link type="text/css" rel="stylesheet" href="userMenu.css">
-        <!--font 적용-->
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    </head>
+
+<head>
+    <title>Fast Food : 메인 페이지</title>
+    <!--Category-->
+    <link type="text/css" rel="stylesheet" href="category.css">
+    <!--UserMenu-->
+    <link type="text/css" rel="stylesheet" href="userMenu.css">
+    <!--font 적용-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!--footer -->
+    <link type="text/css" rel="stylesheet" href="footer.css">
+</head>
+
 <body>
     <div id="userMenu">
         <ul class="menu_list">
             <!--회원가입 , 로그인 버튼을 누르면 그 페이지로 안내해준다.-->
             <li>
                 <a href="">
-                회원가입
+                    회원가입
                 </a>
             </li>
             <li>
                 <a href="">
-                로그인
+                    로그인
                 </a>
             </li>
         </ul>
     </div>
+
     <div id="page-wrapper">
-        <!-- Header -->
-            <div id="header-wrapper">
-                <header id="header" class="container">
-
-                    <!-- Logo -->
-                        <div id="logo">
-                            <h1><a href="Main.html">FastFood</a></h1>
-                            <span>by Hojin Minho</span>
-                        </div>
-
-                    <!-- Nav -->
-                        <nav id="nav">
+        <!-- logo-->
+        <div id="header-wrapper">
+            <header id="header">
+                <div>
+                    <h1><a href="Main.html">FastFood</a></h1>
+                    <span>by Hojin Minho</span>
+                </div>
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li class="current"><a href="Main.html">Welcome</a></li>
+                        <li class="current">
+                            <a href="#">카테고리</a>
                             <ul>
-                                <li class="current"><a href="Main.html">Welcome</a></li>
+                                <li><a href="#">신선</a></li>
+                                <li><a href="#">야채</a></li>
                                 <li>
-                                    <a href="#">카테고리</a>
-                                    <ul id="idid">
-                                        <li ><a href="#">신선</a></li>
-                                        <li ><a href="#">야채</a></li>
-                                        <li>
-                                            <a href="#">축산</a>
-                                            <ul>
-                                                <li><a href="#">고기</a></li>
-                                                <li><a href="#">Phasellus consequat</a></li>
-                                                <li><a href="#">Magna phasellus</a></li>
-                                                <li><a href="#">Etiam dolore nisl</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">수산</a></li>
+                                    <a href="#">축산</a>
+                                    <ul>
+                                        <li><a href="#">소고기</a></li>
+                                        <li><a href="#">돼지고기</a></li>
+                                        <li><a href="#">기타기타</a></li>
+                                        <li><a href="#">기타기타기타</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="../NewProduct/NewProductPage.html">신상품</a></li>
-                                <li><a href="../Best/BestPage.html/">베스트</a></li>
-                                <li><a href="../Money/MonthMoney.html">이달의 돈쭐</a></li>
+                                <li><a href="#">수산</a></li>
                             </ul>
-                        </nav>
-                </header>
-            </div>
-    <div>
-        <div id="category">
-            <ul>
-                <li class="menu_category">카테고리</li>
-                <li class="menu_category">
-                    <a href="../NewProduct/NewProductPage.html">
-                    신상품
-                    </a>
-                </li>
-                <li class="menu_category">
-                    <a href="../Best/BestPage.html">
-                    베스트
-                    </a>
-                </li>
-                <li class="menu_category">이달의 돈쭐코너</li>
-            </ul>
-            <div id="side_search">
-                <form class="menu_category">
-                    검색 : 
-                    <input type="text" placeholder="검색해주세요.">
-                    <input type="button" value="검색">
-                </form>
-            </div>
+                        </li>
+                        <li class="current"><a href="../NewProduct/NewProductPage.html">신상품</a></li>
+                        <li class="current"><a href="../Best/BestPage.html/">베스트</a></li>
+                        <li class="current"><a href="../Money/MonthMoney.html">이달의 돈쭐</a></li>
+                    </ul>
+                    <div id="category">
+                        <div id="side_search">
+                            <form class="menu_category">
+                                검색 :
+                                <input type="text" placeholder="검색해주세요." style="line-height:26px">
+                                <input type="button" value="검색">
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </header>
         </div>
     </div>
-    
+
+    <!--신상품 list db에서 데이터 받아서 한번 넣어보기-->
+    <div>
+        <div>
+            <h3>
+                <a href="../NewProduct/NewProductPage.html">신상품</a>
+            </h3>
+        </div>
+        <div id="newProduct_goods">
+            <ul>
+                <li>
+                    <a>
+                        <img src="" alt="신상품 1번">
+                    </a>
+                    <div>
+                        <h3>상품명</h3>
+                        <h4>상품설명</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="newProduct_goods">
+            <ul>
+                <li>
+                    <a>
+                        <img src="" alt="신상품 2번">
+                    </a>
+                    <div>
+                        <h3>상품명</h3>
+                        <h4>상품설명</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="newProduct_goods">
+            <ul>
+                <li>
+                    <a>
+                        <img src="" alt="신상품 3번">
+                    </a>
+                    <div>
+                        <h3>상품명</h3>
+                        <h4>상품설명</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div id="footer_wrap">
+            <div id="footer_left">
+                <div>
+                    <h2>고객 행복 센터</h2>
+                    <div>
+                        <div>
+                            <h3>
+                            <span class="footer_span">1644-1107</span>
+                            </h3>
+                            <dl class="footer_dl">
+                                <dt>365고객센터</dt>
+                                <dd>오전7시~오후7시</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>
+                        <span class="footer_span">카카오톡 문의</span>
+                        </h3>
+                        <dl class="footer_dl">
+                            <dt>365고객센터</dt>
+                            <dd>오전7시~오후7시</dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <h3>
+                        <span class="footer_span">1:1문의</span>
+                        </h3>
+                        <dl class="footer_dl">
+                            <dt>24시간 접수 가능</dt>
+                            <dd>고객센터 운영시간에 순차적으로 답변드리겠습니다.</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_right">
+                <img src="../Images/footer_example_img.jpg" width="650px" height="240px">
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

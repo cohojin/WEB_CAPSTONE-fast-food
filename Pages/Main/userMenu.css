@@ -1,15 +1,21 @@
-/*회원가입 logo*/
+* {
+  box-sizing: border-box;
+}
+/* login logo */
 #userMenu {
   display: inline;
 }
 #userMenu .menu_list {
-  list-style: none;
   margin-top: auto;
+  list-style: none;
 }
 #userMenu .menu_list li {
   width: 58.9px;
   margin-right: 20px;
   float: right;
+}
+#userMenu .menu_list li a {
+  text-decoration: none;
 }
 
 #main-wrapper {
@@ -19,22 +25,16 @@
 }
 
 #header-wrapper {
-  padding: 4.5em 0 3em 0;
-}
-#header {
-  position: relative;
+  padding: 1.5em 0 3em 0;
 }
 /* Logo */
-
-#logo {
-  display: inline-block;
-  width: 235.02px;
-  height: 59px;
+#header div {
+  margin: auto;
+  /* width: 100%; */
 }
-
-#logo h1 {
-  background: #ff4486;
-  color: #fff;
+#header h1 {
+  background: #34e661;
+  color: rgb(138, 136, 136);
   border-radius: 6px;
   font-family: "Oleo Script", serif;
   font-weight: 400;
@@ -43,42 +43,43 @@
   letter-spacing: 0.05em;
   display: inline-block;
   vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
 }
 
-#logo span {
+#header span {
   font-weight: 800;
   line-height: 4.5em;
   letter-spacing: 0.025em;
   font-size: 0.9em;
   vertical-align: middle;
-  margin: 0 0 0 1.25em;
+  margin: 0 0 0 0;
 }
 
 /* Nav */
 
 #nav {
-  position: absolute;
   right: 400px;
   top: 35px;
   font-size: 0.9em;
-  width: 700px;
   height: 59px;
 }
 
 #nav ul {
   list-style: none;
   padding-left: 5px;
-  width: 1000px;
 }
 
 #nav ul li {
   float: left;
-  line-height: 4.5em;
+  /* line-height: 4.5em; */
+  margin: 0 auto;
   padding-left: 7.5em;
 }
 
 #nav ul li a,
-#nav ul li span {
+#nav ul li span,
+.menu_category {
   -moz-transition: background-color 0.25s ease-in-out;
   -webkit-transition: background-color 0.25s ease-in-out;
   -ms-transition: background-color 0.25s ease-in-out;
@@ -89,15 +90,16 @@
   text-decoration: none;
   border-radius: 6px;
   padding: 0.5em 1em 0.5em 1em;
+  font-size: 1.5rem;
 }
 
-#nav ul li > ul {
+#nav ul li ul {
   display: none;
 }
 
 #nav ul li:hover a,
 #nav ul li:hover span {
-  background: #fff;
+  background: #444;
 }
 
 #nav ul li.active a,
@@ -108,4 +110,13 @@
 #nav ul li.current a {
   background: #444;
   color: #fff;
+}
+.current {
+  font-size: 1.5rem;
+}
+.menu_category {
+  margin-right: 100px;
+}
+#category {
+  margin-bottom: 20px;
 }
