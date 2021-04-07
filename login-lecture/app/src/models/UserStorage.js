@@ -8,17 +8,19 @@ class Userstrorage{
         name:["나개발","김민호"],
     };
 
-    static getUsers(...fields){
-        const users = this.#users;
-        // 반복문
-        const newUsers = fields.reduce((newUsers, field)=>{
-            if(users.hasOwnProperty(field)){
-                newUsers[field] = users[field];
+    static getUsers(){
 
-            }
-            return newUsers;
-        },{});
-        return newUsers;
+        return this.#users;
+        // const users = this.#users;
+        // // 반복문
+        // const newUsers = fields.reduce((newUsers, field)=>{
+        //     if(users.hasOwnProperty(field)){
+        //         newUsers[field] = users[field];
+
+        //     }
+        //     return newUsers;
+        // },{});
+        // return newUsers;
     }
     
 };
