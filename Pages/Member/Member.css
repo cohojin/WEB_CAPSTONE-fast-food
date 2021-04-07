@@ -1,0 +1,58 @@
+a {
+    color: #333;
+    text-decoration: none;
+}
+input {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color:rgb(255, 255, 255);
+    -webkit-rtl-ordering: logical;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial; 
+}
+
+.btn_login  {
+    
+    margin: 20px 0 0;
+    width: 300px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+    background-color: purple;
+    border: 0;
+}
+.btn_click  {
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: black;
+    font-size: 11px;
+    color: #fff;
+    background-color: purple;
+    border: 0;
+}
+
+body, button, input, select, td, textarea, th {
+    font-size: 13px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}    
+fieldset, img {
+    border: 0;
+    background-color: white;
+}
+
