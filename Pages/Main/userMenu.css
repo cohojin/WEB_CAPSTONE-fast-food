@@ -1,11 +1,17 @@
+/*회원가입 logo*/
+#userMenu {
+  display: inline;
+}
 #userMenu .menu_list {
+  list-style: none;
+  margin-top: auto;
+}
+#userMenu .menu_list li {
+  width: 58.9px;
+  margin-right: 20px;
   float: right;
-  width: 100%;
 }
-#userMenu .menu_list {
-  position: relative;
-  left: 20px;
-}
+
 #main-wrapper {
   background: #fff;
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
