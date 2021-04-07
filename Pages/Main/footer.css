@@ -1,0 +1,22 @@
+/* footer */
+#footer_left {
+  margin-right: 20px;
+  float: left;
+  width: 700px;
+}
+.footer_span {
+  width: 140px;
+  float: left;
+}
+.footer_dl {
+  border: 2px solid black;
+}
+#footer_right {
+  margin-top: 20px;
+  float: left;
+  width: 700px;
+}
+footer {
+  margin: auto;
+  width: 1420px;
+}
