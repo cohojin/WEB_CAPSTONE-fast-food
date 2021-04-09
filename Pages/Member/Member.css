@@ -23,6 +23,9 @@ input {
     border-color: initial;
     border-image: initial; 
 }
+input:invalid {
+    border: 3px solid red;
+  }
 
 .btn_login  {
     
