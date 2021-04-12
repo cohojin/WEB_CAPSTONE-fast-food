@@ -1,3 +1,7 @@
+// 장바구니 생성
+
+
+
 let basket = {
     totalCount: 0, 
     totalPrice: 0,
