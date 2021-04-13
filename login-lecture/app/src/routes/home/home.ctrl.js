@@ -13,13 +13,15 @@ const output = {
 
 const process = {
     login:(req,res)=>{
+            const id = req.body.id,
+            psword = req.body.psword;
 
        const user = new User(req.body);
        const respose = user.login();
-        return res.json(respose);
+       console.log(Userstrorage.getUsers("id"));
+        
 
-    //     const id = req.body.id,
-    //         psword = req.body.psword;
+    
 
     //     const userStorage = new Userstrorage();
     //     console.log(userStorage.users);
@@ -37,9 +39,6 @@ const process = {
         return res.json(respose);
      }
 };
-
-
-
 
 module.exports = {
    output,
