@@ -1,0 +1,38 @@
+/* 신상품 main */
+#newproduct_wrap {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#newproduct_wrap {
+  text-align: center;
+}
+.newproduct_container {
+  display: flex;
+  text-align: center;
+}
+.newproduct_item {
+  border: 2px solid black;
+  flex-grow: 1;
+  list-style: none;
+  margin: 5px;
+  width: 300px;
+}
+
+#best_wrap {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#best_wrap {
+  text-align: center;
+}
+.best_container {
+  display: flex;
+  text-align: center;
+}
+.best_item {
+  border: 2px solid black;
+  flex-grow: 1;
+  list-style: none;
+  margin: 5px;
+  width: 300px;
+}
