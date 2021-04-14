@@ -1,0 +1,57 @@
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* login 구현 */
+#main_wrap {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+#login_wrap {
+  height: 30px;
+}
+#login_wrap ul {
+  text-align: right;
+}
+#login_wrap ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+/* 헤더구현 */
+#logo_wrap {
+  text-align: center;
+}
+/* 카테고리 구현 */
+.category_container {
+  /* position: fixed; */
+  display: flex;
+}
+.category_item {
+  flex-grow: 1;
+  list-style: none;
+}
+
+/* dropdown 메뉴 */
+#category_dropdown {
+  padding-left: 9px;
+  opacity: 0;
+}
+#category_dropdown li {
+  list-style: none;
+  float: none;
+  margin: 7px;
+  padding: 0;
+}
+.category_container .category_item:hover #category_dropdown {
+  /* background: black; */
+  opacity: 1;
+}
+.category_container .category_item:hover #category_dropdown li {
+  /* height: 35px; */
+  overflow: visible;
+  padding: 0;
+}

@@ -14,16 +14,37 @@ a {
 #login_wrap {
   height: 30px;
 }
+#login_wrap ul {
+  text-align: right;
+}
 #login_wrap ul li {
-  float: right;
   list-style: none;
   display: inline-block;
   margin-left: 10px;
 }
 /* 헤더구현 */
-
+#logo_wrap {
+  text-align: center;
+}
 /* 카테고리 구현 */
+/* 중간에 있는 메뉴바를 고정 시키고 싶은데 안됨! */
+/* fixed 사용시 메뉴바가 축소되는 현상 */
+#category_wrap {
+  /* position: fixed;
+  width: 100%; */
+  /* top: 150px;
+  left: 50px;
+  right: 50px;
+  width: 1137px; */
+}
+#category_wrap.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
 .category_container {
+  /* position: fixed; */
   display: flex;
 }
 .category_item {

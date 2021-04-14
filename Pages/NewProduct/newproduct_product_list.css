@@ -1,0 +1,19 @@
+.newproduct_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.newproduct_item {
+  border: 2px solid black;
+  margin: 10px;
+  width: 30%;
+  height: 400px;
+  list-style: none;
+}
+.newproduct_item img {
+  width: 100%;
+  height: 70%;
+}
+.newproduct_item h3,
+h4 {
+  text-align: center;
+}
