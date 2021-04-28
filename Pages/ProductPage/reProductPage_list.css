@@ -1,0 +1,46 @@
+/* 전체 적용 */
+body {
+  font-family: noto sans;
+}
+/*  */
+#productPage_img {
+  text-align: center;
+}
+.productPage_container {
+  display: flex;
+}
+.productPage_item {
+  flex-grow: 1;
+}
+/* button */
+.btn_purchase {
+  margin: 20px 0 0;
+  height: 48px;
+  width: 200px;
+  border-radius: 3px;
+  font-size: 16px;
+  color: white;
+  background-color: purple;
+}
+.btn_basket {
+  margin: 20px 0 0;
+  height: 48px;
+  width: 200px;
+  border-radius: 3px;
+  font-size: 16px;
+  color: purple;
+  background-color: white;
+}
+/* info */
+.productPage_infoMenu_container {
+  display: flex;
+}
+.productPage_infoMenu_items {
+  padding-top: 8px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #bfbfbf;
+  background: #f0eef1;
+  flex-grow: 1;
+  list-style: none;
+}

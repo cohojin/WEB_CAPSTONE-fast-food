@@ -1664,7 +1664,22 @@ header.major h2 {
 footer {
   margin: 2.25em 0 0 0;
 }
-
+/* main_wrap*/
+#main_wrap {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+#login_wrap {
+  height: 30px;
+}
+#login_wrap ul {
+  text-align: right;
+}
+#login_wrap ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+}
 /* Box */
 
 .box {
