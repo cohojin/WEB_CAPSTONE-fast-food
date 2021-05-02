@@ -17,3 +17,22 @@
 h4 {
   text-align: center;
 }
+/* quick nav */
+#quick {
+  position: absolute;
+  width: 80px;
+  height: 25px;
+  right: 0px;
+}
+#quick div {
+  position: fixed;
+}
+.quick_link {
+  display: block;
+  text-align: center;
+}
+#quick_side {
+  width: 80px;
+  margin-top: 110px;
+  border: 1px solid #ddd;
+}

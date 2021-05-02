@@ -4,6 +4,9 @@
     <title>
         New Product :: 신상품 페이지
     </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+    </style>
     <link type="text/css" href="newproduct_header.css" rel="stylesheet">
     <link type="text/css" href="newproduct_footer.css" rel="stylesheet">
     <link type="text/css" href="newproduct_product_list.css" rel="stylesheet">
@@ -25,23 +28,30 @@
                     로그인
                     </a>
                 </li>
+                <li>고객센터</li>
             </ul>
         </div>
         <!-- logo 만들기 -->
         <div id="logo_wrap">
-            <img src="../Images/logo.png" width="100px" height="100px">
+            <a href="../re_main/re_main.html">
+                <img src="../Images/logo.png" width="100px" height="100px">
+            </a>
         </div>
         <!-- 메뉴바 fixed로 고정 javascript 추가 부분-->
         <div id="category_wrap">
             <ul class="category_container">
                 <li class="category_item">
                     <a href="../re_main/re_main.html">
-                    Welcome
+                        <span>
+                            Welcome
+                        </span>
                     </a>
                 </li>
                 <li class="category_item">
                     <a href="#">
-                    카테고리
+                        <span>
+                            카테고리
+                        </span>
                     </a>
                     <ul id="category_dropdown">
                         <li>수산</li>
@@ -52,20 +62,41 @@
                 </li>
                 <li class="category_item">
                     <a href="../NewProduct/NewProductPage.html">
-                    신상품
+                        <span>
+                            신상품
+                        </span>
                     </a>
                 </li>
                 <li class="category_item">
                     <a href="../Best/best.html">
-                    베스트
+                        <span>
+                            베스트
+                        </span>
                     </a>
                 </li>
                 <li class="category_item">
                     <a href="../Money/MonthMoney.html">
-                    이달의돈쭐
+                        <span>
+                            이달의돈쭐
+                        </span>
                     </a>
                 </li>
             </ul>
+        </div>
+        <!-- quick nav -->
+        <div id="quick">
+            <div>
+                <div id="quick_img">
+                    <a href="#">
+                        <img src="../Images/pic01.jpg" width="80px" height="100px">
+                    </a>
+                </div>
+                <div id="quick_side">
+                    <a href="#" class="quick_link">등급혜택</a>
+                    <a href="#" class="quick_link">레시피</a>
+                    <a href="#" class="quick_link">장바구니</a>
+                </div>
+            </div>
         </div>
         <!-- 신상품 배치 -->
         <div id="newproduct_list_wrap">

@@ -1,3 +1,43 @@
+/* slick slider */
+.visual {
+  position: relative;
+  margin-left: 150px;
+  z-index: 0;
+}
+.visual button {
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 71px;
+  height: 71px;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+.visual button.slick-prev {
+  left: 0;
+  font-size: 0;
+  color: transparent;
+}
+.visual button.slick-prev:before {
+  content: "\e93d";
+  font-family: "xeicon";
+  color: white;
+  font-size: 45px;
+}
+.visual button.slick-next {
+  right: 117px;
+  font-size: 0;
+  color: transparent;
+}
+.visual button.slick-next:before {
+  content: "\e940";
+  font-family: "xeicon";
+  color: white;
+  font-size: 45px;
+}
+
 /* 신상품 main */
 #newproduct_wrap {
   margin-left: 50px;
@@ -17,7 +57,7 @@
   margin: 5px;
   width: 300px;
 }
-
+/* 베스트 main */
 #best_wrap {
   margin-left: 50px;
   margin-right: 50px;
