@@ -1,0 +1,92 @@
+/* 전체 적용 */
+body {
+  font-family: noto sans;
+}
+/*  */
+#productPage_img {
+  text-align: center;
+}
+.productPage_container {
+  display: flex;
+}
+.productPage_item {
+  flex-grow: 1;
+}
+/* button */
+.btn_purchase {
+  margin: 20px 0 0;
+  height: 48px;
+  width: 200px;
+  border-radius: 3px;
+  font-size: 16px;
+  color: white;
+  background-color: purple;
+}
+.btn_basket {
+  margin: 20px 0 0;
+  height: 48px;
+  width: 200px;
+  border-radius: 3px;
+  font-size: 16px;
+  color: purple;
+  background-color: white;
+  /* border: 1px solid black; */
+}
+/* info */
+.productPage_infoMenu_container {
+  display: flex;
+}
+.productPage_infoMenu_items {
+  padding-top: 8px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #bfbfbf;
+  background: #f0eef1;
+  flex-grow: 1;
+  list-style: none;
+}
+/* table  */
+#productPage_detail_content {
+  margin-top: 150px;
+}
+#anc_table {
+  margin-bottom: 150px;
+}
+
+.table_row {
+  background: #f5f5f5;
+  color: #515151;
+}
+
+/* why fastfood */
+.why_container {
+  margin-left: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.why_items {
+  /* border: 1px solid black; */
+  margin: 43px 0 0 10px;
+  width: 25%;
+  list-style: none;
+}
+.why_items img {
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+.img_div {
+  text-align: center;
+}
+.why_items h2,
+.why_items h2 p {
+  text-align: center;
+}
+#why_fastfood {
+  text-align: center;
+}
+
+/* iframe 적용 */
+#productPage_info_content div {
+  text-align: center;
+}
