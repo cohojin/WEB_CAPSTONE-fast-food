@@ -85,3 +85,8 @@ body {
 #why_fastfood {
   text-align: center;
 }
+
+/* iframe 적용 */
+#productPage_info_content div {
+  text-align: center;
+}
