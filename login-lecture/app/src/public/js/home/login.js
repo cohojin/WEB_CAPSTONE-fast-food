@@ -18,7 +18,7 @@ function login(){
     };
     console.log(req);
    
-    fetch("/login",{
+    fetch("/Login",{
         method:"POST",
         headers:{
             "Content-Type": "application/json"
