@@ -1,4 +1,4 @@
-package fastfood.fastfood;
+package fastshop.fastfood;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

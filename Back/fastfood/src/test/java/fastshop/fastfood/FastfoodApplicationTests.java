@@ -1,4 +1,4 @@
-package fastfood.fastfood;
+package fastshop.fastfood;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
