@@ -2,12 +2,9 @@ package fastshop.fastfood.Repository;
 
 
 import fastshop.fastfood.domain.Member;
-import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import java.util.*;
+import java.util.List;
+import java.util.Optional;
 
 
 public interface MemberRepository {
