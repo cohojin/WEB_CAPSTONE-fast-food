@@ -7,23 +7,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.util.*;
 
-@Repository
-public class MemberRepository {
 
-    @PersistenceContext
-    private EntityManager em;
-
-    @Transactional
-    public Long save(Member member) {
-
-        em.persist(member);
-
-        return member.getId();
-    }
-
-    public Member find(Long id) {
-
-        return em.find(Member.class, id);
-    }
+public interface MemberRepository {
+    Member save(Member member);
+    Optional<Member> findById(Long id);
+    Optional<Member> findByName(String name);
+    List<Member> findAll();
 }
