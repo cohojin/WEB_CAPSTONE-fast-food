@@ -38,3 +38,6 @@ li {
   margin: 10px;
   border: 1px solid #ddd;
 }
+.pay_address {
+  text-align: left;
+}

@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 }
 .newproduct_item {
-  border: 2px solid black;
+  border: 1px solid #ddd;
   margin: 10px;
   width: 30%;
   height: 400px;
