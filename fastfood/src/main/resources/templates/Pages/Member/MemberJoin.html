@@ -14,9 +14,10 @@
 
  <!DOCTYPE html>
  <html lang="ko-KR"> 
- <meta charset="UTF-8"> 
+ <meta charset="UTF-8">
+ <link type="text/css" rel="stylesheet" href="/css/Member.css">
  <style type="text/css">
-     @import url("Member.css");
+     @import url("/css/Member.css");
      #checkCircle{
              display: inline-block;
              border-radius: 50%;
@@ -50,6 +51,7 @@
                  box-shadow : 20px 20px 20px 1px black}
          
  </style>
+
  
  <html>
  <head>
@@ -120,6 +122,8 @@
  <div id = "wrapper">
  <br><br><br><br><br><br><br><br><br>
  <label >회원 기본 정보</label><br>
+     <form action="/members/new" method="post">
+         <div class="form-group">
  <label>아이디</label> <br>
  <label><input  name="LogID" id = "LogID" maxlength="15" >
      &nbsp;&nbsp;<button class = "btn_click" id = "btnIDCheck" >중복확인</button>
@@ -160,6 +164,8 @@
          }
              
      </script>
+         </div>
+     </form>
  <label>
      <label>비밀번호</label><br>
      <input id ="password1" name = "password1"  type="password" oninput="handleOnInput(this)">

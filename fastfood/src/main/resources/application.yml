@@ -1,6 +1,7 @@
 spring:
   datasource:
     url: jdbc:h2:tcp://localhost/~/foodshop
+    username : sa
     hibernate:
       ddl-auto: create
     properties:
@@ -10,3 +11,6 @@ spring:
 logging:
   level:
     org.hibernate.SQL: debug
+
+
+

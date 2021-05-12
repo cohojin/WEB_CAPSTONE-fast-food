@@ -5,11 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3f7bc9c-0c0a-41b9-b607-b907b29b954a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/Member.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Repository/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/re_main/main_footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/re_main/main_header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/re_main/main_proudct_list.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/re_main/menubar_fixed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/menubar_fixed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/re_main/re_main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/HomeContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/HomeContoller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Repository/JdbcMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Repository/JdbcMemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/domain/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Pages/basket/basket.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Pages/basket/basket.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Pages/pay/pay.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Pages/pay/pay_header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Pages/pay/pay_list.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Pages/re_main/re_main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Member/MemberJoin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/Member/MemberJoin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/re_main/menubar_fixed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/re_main/re_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/re_main/re_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/re_main/main_footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/re_main/main_header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/re_main/main_proudct_list.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/re_main/menubar_fixed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/re_main/re_main.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +69,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1s3m4RMg6ce5YlwsPrb21hLjjOc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -56,7 +83,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/css" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -64,6 +91,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\harry\Desktop\webFastFood\WEP_CAPSTONE-fast-food\fastfood\src\main\resources\static\css" />
+      <recent name="C:\Users\harry\Desktop\webFastFood\WEP_CAPSTONE-fast-food\fastfood\src\main\resources\static\js" />
       <recent name="C:\Users\harry\Desktop\fastfood_spring_real\fastfood\src\main\resources\templates\members" />
       <recent name="C:\Users\harry\Desktop\fastfood_spring_real\fastfood\src\main\resources\templates" />
     </key>
@@ -71,6 +100,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\harry\Desktop\webFastFood\WEP_CAPSTONE-fast-food\fastfood\src\main\resources\static\js" />
       <recent name="C:\Users\harry\Desktop\fastfood_spring_real\fastfood\src\main\resources\templates" />
       <recent name="C:\Users\harry\Desktop\fastfood_spring_real\fastfood\src\main\resources\templates\re_main" />
     </key>
@@ -178,6 +208,7 @@
     <servers />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.jsp" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
@@ -191,6 +222,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

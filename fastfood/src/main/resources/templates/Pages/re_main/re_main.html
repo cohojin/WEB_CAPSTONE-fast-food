@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
     <head> 
         <title>Fast Food :: 메인페이지 </title>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
         </style>
-        <link type="text/css" rel="stylesheet" href="main_header.css">
-        <link type="text/css" rel="stylesheet" href="main_proudct_list.css">
-        <link type="text/css" rel="stylesheet" href="main_footer.css">
+        <link type="text/css" rel="stylesheet" href="/css/main_header.css">
+        <link type="text/css" rel="stylesheet" href="/css/main_proudct_list.css">
+        <link type="text/css" rel="stylesheet" href="/css/main_footer.css">
         <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-        <!-- <script src="../jquery/jquery.js"></script> -->
+        <script src="/js/jquery.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <!-- slick -->
         
@@ -22,7 +22,7 @@
         <div id="login_wrap">
             <ul>
                 <li>
-                    <a href="../Member/MemberJoin.html">
+                    <a href="/members/new">
                     회원가입
                     </a>
                 </li>
@@ -183,6 +183,6 @@
             </div>
         </div>
     </div>
-    <script src="menubar_fixed.js"></script>
+    <script src="/js/menubar_fixed.js"></script>
 </body>
 </html>

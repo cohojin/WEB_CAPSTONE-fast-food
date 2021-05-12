@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeContoller {
     @GetMapping("/")
     public String home(){
-        return "home";
+        return "Pages/re_main/re_main";
     }
 }
