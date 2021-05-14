@@ -20,12 +20,12 @@ public class MemberController {
         this.memberService = memberService;
     }
 
-    @GetMapping("/members/new")
+    @GetMapping("/memberJoin")
     public String createForm(){
 
-        return "Pages/Member/MemberJoin";
+        return "Pages/Member/member";
     }
-    @PostMapping("/members/new")
+    @PostMapping("/memberJoin")
     public String create(MemberForm form){
         Member member = new Member();
         member.setName(form.getName());
@@ -34,7 +34,7 @@ public class MemberController {
         memberService.join(member);
         return "redirect:/";
     }
-    @GetMapping("/members")
+    @GetMapping("/memberList")
     public String list(Model model){
         List<Member> members = memberService.findMembers();
         model.addAttribute("members", members);

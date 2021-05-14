@@ -5,35 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3f7bc9c-0c0a-41b9-b607-b907b29b954a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/Member.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/BestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/MonthMoneyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/NewProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/re_main/main_footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/re_main/main_header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/re_main/main_proudct_list.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/re_main/menubar_fixed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/menubar_fixed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/re_main/re_main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/HomeContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/HomeContoller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/HomeContoller.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Repository/JdbcMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Repository/JdbcMemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/domain/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Pages/basket/basket.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Pages/basket/basket.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Pages/pay/pay.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Pages/pay/pay_header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Pages/pay/pay_list.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Pages/re_main/re_main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Member/MemberJoin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/Member/MemberJoin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/re_main/menubar_fixed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main_footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main_footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main_header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main_header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main_proudct_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main_proudct_list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/menubar_fixed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/menubar_fixed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/Login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Login/Login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Login/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Member/Member.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Member/MemberJoin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Member/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Member/로고.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Best/best.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/Best/best.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Best/best_footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/best_footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Best/best_header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/best_header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Best/best_product_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/best_product_list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Images/bars.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Images/bars.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Images/footer_example_img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Images/footer_example_img.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Images/pic01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Images/pic01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Login/Login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Login/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/Login/Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Login/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Member/Member.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/Member/Member.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Member/MemberJoin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Money/MonthMoney.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/Money/MonthMoney.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Money/monthMoney_footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/monthMoney_footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Money/monthMoney_header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/monthMoney_header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/Money/monthMoney_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/monthMoney_list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/NewProduct/NewProductPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/NewProduct/NewProductPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/NewProduct/newproduct_footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/newproduct_footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/NewProduct/newproduct_header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/newproduct_header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/NewProduct/newproduct_product_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/newproduct_product_list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/ProductPage/reProductPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/ProductPage/reProductPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/ProductPage/reProductPage_footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/reProductPage_footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/ProductPage/reProductPage_header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/reProductPage_header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/ProductPage/reProductPage_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/reProductPage_list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/basket/basket.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/basket/basket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/basket/basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/basket/basket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/basket/basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/basket/basket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/jquery/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/re_main/main_footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/re_main/main_footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/re_main/main_header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/re_main/main_header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/re_main/main_proudct_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/re_main/main_proudct_list.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/re_main/re_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/re_main/re_main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/re_main/main_footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/re_main/main_header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/re_main/main_proudct_list.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/re_main/menubar_fixed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/re_main/re_main.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,9 +93,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="1s3m4RMg6ce5YlwsPrb21hLjjOc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -100,6 +121,8 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\harry\Desktop\webFastFood\WEP_CAPSTONE-fast-food\fastfood\src\main\resources\static\css" />
+      <recent name="C:\Users\harry\Desktop\webFastFood\WEP_CAPSTONE-fast-food\fastfood\src\main\resources\static" />
       <recent name="C:\Users\harry\Desktop\webFastFood\WEP_CAPSTONE-fast-food\fastfood\src\main\resources\static\js" />
       <recent name="C:\Users\harry\Desktop\fastfood_spring_real\fastfood\src\main\resources\templates" />
       <recent name="C:\Users\harry\Desktop\fastfood_spring_real\fastfood\src\main\resources\templates\re_main" />

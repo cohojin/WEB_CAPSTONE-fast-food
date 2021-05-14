@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Fast Food :: 결제 페이지</title>
+  <link type="text/css" href="../pay/pay_header.css" rel="stylesheet">
+  <link type="text/css" href="../pay/pay_list.css" rel="stylesheet">
+
+  <SCRIPT src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></SCRIPT>
+</head>
+
+<body>
+  <div id="main_wrap">
+    <div id="login_wrap">
+      <ul>
+        <li>
+          <a href="../Member/MemberJoin.html">
+            회원가입
+          </a>
+        </li>
+        <li>
+          <a href="../Login/Login.html">
+            로그인
+          </a>
+        </li>
+        <li>고객센터</li>
+      </ul>
+    </div>
+    <!-- logo 만들기 -->
+    <div id="logo_wrap">
+      <a href="../re_main/re_main.html">
+        <img src="../Images/logo.png" width="100px" height="100px">
+      </a>
+    </div>
+    <!-- 메뉴바 fixed로 고정 javascript 추가 부분-->
+    <div id="category_wrap">
+      <ul class="category_container">
+        <li class="category_item">
+          <a href="../re_main/re_main.html">
+            <span>
+              Welcome
+            </span>
+          </a>
+        </li>
+        <li class="category_item">
+          <a href="#">
+            <span>
+              <img src="../Images/bars.png" width="16px" height="14px">
+            </span>
+            <span>
+              카테고리
+            </span>
+          </a>
+          <ul id="category_dropdown">
+            <li>수산</li>
+            <li>축산</li>
+            <li>상품3</li>
+            <li>상품4</li>
+          </ul>
+        </li>
+        <li class="category_item">
+          <a href="../NewProduct/NewProductPage.html">
+            <span>
+              신상품
+            </span>
+          </a>
+        </li>
+        <li class="category_item">
+          <a href="../Best/best.html">
+            <span>
+              베스트
+            </span>
+          </a>
+        </li>
+        <li class="category_item">
+          <a href="../Money/MonthMoney.html">
+            <span>
+              이달의돈쭐
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="pay_wrap">
+      <h2>주문서</h2>
+      <h3 class="pay_arr">결제상품</h3>
+      <div id="pay_product_wrap">
+        <div id="pay_product_container">
+          <div class="pay_product_items">
+            <img src="../Images/pic01.jpg" width="60px" height="78px">
+          </div>
+          <div class="pay_product_items pay_product_padding">
+            상품이름이 들어갑니다.
+          </div>
+          <div class="pay_product_items pay_product_padding">
+            2개
+          </div>
+          <div class="pay_product_items pay_product_padding">
+            5000원
+          </div>
+        </div>
+      </div>
+      <h3 class="pay_arr">주문자 정보</h3>
+      <form id="pay_info_wrap">
+        <div id="pay_info">
+          <table>
+            <tbody>
+              <tr>
+                <th>보내는분</th>
+                <td>
+                  <input type="text" placeholder="이름을 입력해주세요" class="input_size">
+                </td>
+              </tr>
+              <tr>
+                <th>휴대폰</th>
+                <td>
+                  <input type="text" placeholder="숫자만 입력해주세요" class="input_size">
+                </td>
+              </tr>
+              <tr>
+                <th>이메일</th>
+                <td>
+                  <input type="text" placeholder="예)sungkonghoe@sungkonghoe.com" class="input_size">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 class="pay_arr">배송정보</h3>
+          <div class="pay_address">
+            <input type="text" id="sample4_postcode" placeholder="우편번호" class="input_size">
+            <input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기">
+          </div>
+          <div class="pay_address">
+            <input type="text" id="sample4_roadAddress" placeholder="도로명주소" class="input_size">
+            <input type="text" id="sample4_jibunAddress" placeholder="지번주소" class="input_size">
+            <span id="guide" style="color:#999;display:none"></span>
+          </div>
+          <div class="pay_address">
+            <input type="text" id="sample4_detailAddress" placeholder="상세주소" class="input_size">
+            <input type="text" id="sample4_extraAddress" placeholder="참고항목" class="input_size">
+          </div>
+        </div>
+        <div id="pay_credit_wrap">
+          <h3 class="pay_arr">결제수단</h3>
+          <div id="pay_credit">
+            <table>
+              <tbody>
+                <tr>
+                  <th>카카오페이</th>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- 다음 주소 api -->
+  <script src="../js/daumApi.js"></script>
+</body>
+
+</html>

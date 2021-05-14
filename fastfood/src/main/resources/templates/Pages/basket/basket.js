@@ -1,7 +1,6 @@
 // 장바구니 생성
 
 
-
 let basket = {
     totalCount: 0, 
     totalPrice: 0,
@@ -20,14 +19,14 @@ let basket = {
     delAllItem: function(){
         document.querySelectorAll('.row.data').forEach(function (item) {
             item.remove();
-          });
+        });
           //AJAX 서버 업데이트 전송
         
           //전송 처리 결과가 성공이면
-          this.totalCount = 0;
-          this.totalPrice = 0;
-          this.reCalc();
-          this.updateUI();
+        this.totalCount = 0;
+        this.totalPrice = 0;
+        this.reCalc();
+        this.updateUI();
     },
     //재계산
     reCalc: function(){
