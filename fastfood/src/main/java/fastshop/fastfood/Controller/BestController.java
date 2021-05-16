@@ -9,6 +9,6 @@ public class BestController {
 
     @GetMapping("/BestPage")
     public String BestPage(){
-        return "Pages/Best/best";
+        return "html/Best";
     }
 }

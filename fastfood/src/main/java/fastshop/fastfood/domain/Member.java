@@ -19,9 +19,10 @@ public class Member {
     private String userpw;
     private String username;
     private String address;
-//    private String email;
-//    private String tel;
-//    private String birth;
+    private String email;
+    private String tel;
+    private String birth;
+    private String basket_p;
 
 }
 

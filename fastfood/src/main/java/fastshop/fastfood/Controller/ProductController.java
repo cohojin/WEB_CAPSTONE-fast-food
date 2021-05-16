@@ -11,6 +11,6 @@ public class ProductController {
 
     @GetMapping("/ProductPage")
     public String product(){
-        return "Pages/ProductPage/reProductPage";
+        return "html/ProductPage";
     }
 }

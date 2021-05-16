@@ -8,7 +8,8 @@ public class LoginController {
 
     @GetMapping("/Login")
     public String home(){
-        return "Pages/Login/Login";
+        return
+                "html/Login";
     }
 
 

@@ -10,7 +10,7 @@ public class MonthMoneyController {
     @GetMapping("/Money")
     public String MonthMoney(){
 
-        return "Pages/Money/MonthMoney";
+        return "html/MonthMoney";
     }
 
 
