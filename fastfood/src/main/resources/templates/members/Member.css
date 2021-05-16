@@ -1,0 +1,138 @@
+a {
+    color: #333;
+    text-decoration: none;
+}
+input {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color:rgb(255, 255, 255);
+    -webkit-rtl-ordering: logical;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+input:invalid {
+    border: 3px solid red;
+  }
+
+.btn_login  {
+
+    margin: 20px 0 0;
+    width: 300px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+    background-color: purple;
+    border: 0;
+}
+.btn_click  {
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: black;
+    font-size: 11px;
+    color: #fff;
+    background-color: purple;
+    border: 0;
+}
+
+body, button, input, select, td, textarea, th {
+    font-size: 13px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+fieldset, img {
+    border: 0;
+    background-color: white;
+}
+
+#checkCircle{
+    display: inline-block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px
+
+}
+#checkText{
+    display: inline-block;
+}
+#wrapper{
+    /* float: left; */
+    display: table; margin-left: auto; margin-right: auto;
+
+}
+textarea{
+    width:300px;
+    height:100px;
+    resize:none;/* 크기고정 */
+    /*   resize: horizontal; // 가로크기만 조절가능
+    resize: vertical;  세로크기만 조절가능  */
+}
+#table1 {border :10px ridge red;
+        padding : 20px;
+        border-collapse:serperate;
+        table-layout:fixed;
+        margin-left:100px;
+        font-family:"궁서체";
+        font-weight:bold;
+        border-radius:50px;
+        box-shadow : 20px 20px 20px 1px black}
+
+/*해더영역 1440 343 70 273*/
+/*header_navigation_bar*/
+/*hd_nav_wrap*/
+div#header_Area{position:fixed;height:70px; top:0; left:0; right:0; display: flex; justify-content: space-between; align-items: center; background-color: #ffffff; transition:height 0.2s;  overflow: hidden;}
+div#header_Area:hover{height:343px;}
+
+header{width: 100%; height: 343px; margin:0 auto; border-bottom: 1px solid #e5e5e5; box-sizing: border-box; overflow: hidden;}
+
+
+div.header_navigation_bar{width:1440px; height:343px; margin:0 auto; vertical-align: baseline; position: absolute; left: 50%; top: 0; display: flex; justify-content: space-between;  width: 100%; max-width: 1460px; transform: translateX(-50%); }
+
+div.header_nav_LogoLang{margin: 0 auto; position: absolute; left: 50%; top: 0; display: flex; justify-content: space-between; align-items: center; width: 100%;  max-width: 1460px; height: 70px; transform: translateX(-50%); border-bottom:1px solid gray; box-sizing: border-box;}
+
+div.header_navigation_bar h1{width:9.5rem; height: 1.5rem; display:block;
+      background: url(logo.png) no-repeat left center; background-size: contain; text-indent: -9999px; }
+div.header_navigation_bar h1 a{display: block;}
+
+div.lang_change{width: 110px; height: 70px; display: flex; justify-content: space-between; align-items: center;}
+
+div.lang_change > ul > li{height: 16px; padding:0 7px;  font-size: 14px; font-weight: bold; line-height: 14px; float: left; position: relative;}
+div.lang_change > ul > li a{color: #000;}
+div.lang_change > ul > li:nth-child(2) a{
+    margin-left: 20px;
+    padding-right: 0;
+    opacity:0.5;
+    transition:all 0.3s;
+}
+div.lang_change > ul > li:nth-child(2):hover a{opacity:1;}
+div.lang_change > ul > li:nth-child(2):before{content:"|"; font-size: 4px; color:#000; margin-right:-7px;}
+
+
+
+
+div.hd_nav_wrap{ margin:0 auto; position:relative; display: flex; justify-content: center; }
+
+div.hd_nav_wrap > ul{display: block;}
+li.hd_nav_ul_li_title{float: left; display: inline-block;}
+
+li.hd_nav_ul_li_title > a{height: 70px; padding:0 50px; font-size:16px; font-weight: bold; color:#000;
+     display: flex; justify-content: center; align-items: center; }
+li.hd_nav_ul_li_title > div > ul > li{display: flex; justify-content:
+     center; align-items: center; width: 100%; padding: 6px 0; font-size: 14px;
+      line-height: 20px;}
+li.hd_nav_ul_li_title a span{font-size:14px; font-weight: bold;  color:rgba(78,78,78,0.6); transition:0.2s;}
+li.hd_nav_ul_li_title a span:hover{color:rgba(78,78,78,1.0);}

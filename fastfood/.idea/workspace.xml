@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c3f7bc9c-0c0a-41b9-b607-b907b29b954a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/PayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/domain/Product_periods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Images/chicken.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Images/kakao_pay.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Images/minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Images/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/basket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/daumApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/pay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/productCalc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/html/Basket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/html/Best.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/html/Login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/html/Member.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/html/MonthMoney.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/html/NewProductPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/html/Pay.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/html/ProductPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/BestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/BestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/MonthMoneyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/MonthMoneyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/NewProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/NewProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/Controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/domain/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/domain/cash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fastshop/fastfood/domain/cash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Images/new_img/[삼양] 불닭소스.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Images/new_img/삼양,불닭소스.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/Login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/Member.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/best_footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/best_header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/best_product_list.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main_footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main_header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main_proudct_list.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/member_footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/member_header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/member_list.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/monthMoney_footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/monthMoney_header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/monthMoney_list.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/newproduct_footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/newproduct_header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/newproduct_product_list.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/reProductPage_footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/reProductPage_header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/reProductPage_list.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Images/bars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Images/footer_example_img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Images/pic01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Pages/ProductPage/reProductPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Pages/ProductPage/reProductPage.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1s3m4RMg6ce5YlwsPrb21hLjjOc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/css" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\harry\Desktop\webFastFood\WEP_CAPSTONE-fast-food\fastfood\src\main\resources\static\css" />
+      <recent name="C:\Users\harry\Desktop\webFastFood\WEP_CAPSTONE-fast-food\fastfood\src\main\resources\static\js" />
+      <recent name="C:\Users\harry\Desktop\fastfood_spring_real\fastfood\src\main\resources\templates\members" />
+      <recent name="C:\Users\harry\Desktop\fastfood_spring_real\fastfood\src\main\resources\templates" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\harry\Desktop\webFastFood\WEP_CAPSTONE-fast-food\fastfood\src\main\resources\static\css" />
+      <recent name="C:\Users\harry\Desktop\webFastFood\WEP_CAPSTONE-fast-food\fastfood\src\main\resources\static" />
+      <recent name="C:\Users\harry\Desktop\webFastFood\WEP_CAPSTONE-fast-food\fastfood\src\main\resources\static\js" />
+      <recent name="C:\Users\harry\Desktop\fastfood_spring_real\fastfood\src\main\resources\templates" />
+      <recent name="C:\Users\harry\Desktop\fastfood_spring_real\fastfood\src\main\resources\templates\re_main" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="fastshop.fastfood.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FastfoodApplication">
+    <configuration name="FastfoodApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fastshop.fastfood.FastfoodApplication" />
+      <module name="fastfood.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fastshop.fastfood.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fastfood.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fastshop.fastfood.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fastshop.fastfood.service" />
+      <option name="MAIN_CLASS_NAME" value="fastshop.fastfood.service.MemberServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberServiceTest.회원가입" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fastfood.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fastshop.fastfood.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fastshop.fastfood.service" />
+      <option name="MAIN_CLASS_NAME" value="fastshop.fastfood.service.MemberServiceTest" />
+      <option name="METHOD_NAME" value="회원가입" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberServiceTest.중복회원예외" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fastfood.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fastshop.fastfood.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fastshop.fastfood.service" />
+      <option name="MAIN_CLASS_NAME" value="fastshop.fastfood.service.MemberServiceTest" />
+      <option name="METHOD_NAME" value="중복회원예외" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemoryMemberRepositoryTest.findByName" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="fastfood.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fastshop.fastfood.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fastshop.fastfood.test" />
+      <option name="MAIN_CLASS_NAME" value="fastshop.fastfood.repository.MemoryMemberRepositoryTest" />
+      <option name="METHOD_NAME" value="findByName" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FastfoodApplication" />
+        <item itemvalue="JUnit.MemberServiceTest" />
+        <item itemvalue="TestNG.MemoryMemberRepositoryTest.findByName" />
+        <item itemvalue="JUnit.MemberServiceTest.회원가입" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3f7bc9c-0c0a-41b9-b607-b907b29b954a" name="Default Changelist" comment="" />
+      <created>1620109455861</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620109455861</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.jsp" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/fastshop/fastfood/repository/MemoryMemberRepositoryTest.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BestPage :: 베스트 페이지</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+        </style>
+        <link type="text/css" rel="stylesheet" href="/css/best_header.css">
+        <link type="text/css" rel="stylesheet" href="/css/best_product_list.css">
+        <link type="text/css" rel="stylesheet" href="/css/best_footer.css">
+        <!-- 제이쿼리 메뉴바 고정 -->
+        <script src="/js/jquery.js"></script>
+
+    </head>
+<body>
+    <div id="main_wrap">
+        <div id="login_wrap">
+            <ul>
+                <li>
+                    <a href="/memberJoin">
+                    회원가입
+                    </a>
+                </li>
+                <li>
+                    <a href="/Login">
+                    로그인
+                    </a>
+                </li>
+                <li>고객센터</li>
+            </ul>
+        </div>
+        <!-- logo 만들기 -->
+        <div id="logo_wrap">
+            <a href="/home">
+                <img src="/Images/logo.png" width="100px" height="100px">
+            </a>
+        </div>
+        <!-- 메뉴바 fixed로 고정 javascript 추가 부분-->
+        <div id="category_wrap">
+            <ul class="category_container">
+                <li class="category_item">
+                    <a href="/home">
+                        <span>
+                            Welcome
+                        </span>
+                    </a>
+                </li>
+                <li class="category_item">
+                    <a href="#">
+                        <span>
+                            <img src="/Images/bars.png" width="16px" height="14px">
+                        </span>
+                        <span>
+                            카테고리
+                        </span>
+                    </a>
+                    <ul id="category_dropdown">
+                        <li>수산</li>
+                        <li>축산</li>
+                        <li>상품3</li>
+                        <li>상품4</li>
+                    </ul>
+                </li>
+                <li class="category_item">
+                    <a href="/newProduct">
+                        <span>
+                            신상품
+                        </span>
+                    </a>
+                </li>
+                <li class="category_item">
+                    <a href="/BestPage">
+                        <span>
+                            베스트
+                        </span>
+                    </a>
+                </li>
+                <li class="category_item">
+                    <a href="/Money">
+                        <span>
+                            이달의돈쭐
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- quick nav -->
+        <div id="quick">
+            <div>
+                <div id="quick_img">
+                    <a href="#">
+                        <img src="/Images/pic01.jpg" width="80px" height="100px">
+                    </a>
+                </div>
+                <div id="quick_side">
+                    <a href="#" class="quick_link">등급혜택</a>
+                    <a href="#" class="quick_link">레시피</a>
+                    <a href="#" class="quick_link">장바구니</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 베스트 상품 배치 -->
+        <div id="best_list_wrap">
+            <ul class="best_container">
+                <li class="best_item">
+                    <a href="/ProductPage">
+                        <img src="/Images/pic01.jpg">
+                        <h3>상품명</h3>
+                        <h4>상품가격</h4>
+                    </a>
+                </li>
+                <li class="best_item">
+                    <a href="/ProductPage">
+                        <img src="/Images/pic01.jpg">
+                        <h3>상품명</h3>
+                        <h4>상품가격</h4>
+                    </a>
+                </li>
+                <li class="best_item">
+                    <a href="/ProductPage">
+                        <img src="/Images/pic01.jpg">
+                        <h3>상품명</h3>
+                        <h4>상품가격</h4>
+                    </a>
+                </li>
+                <li class="best_item">
+                    <a href="/ProductPage">
+                        <img src="/Images/pic01.jpg">
+                        <h3>상품명</h3>
+                        <h4>상품가격</h4>
+                    </a>
+                </li>
+                <li class="best_item">
+                    <a href="/ProductPage">
+                        <img src="/Images/pic01.jpg">
+                        <h3>상품명</h3>
+                        <h4>상품가격</h4>
+                    </a>
+                </li>
+                <li class="best_item">
+                    <a href="/ProductPage">
+                        <img src="/Images/pic01.jpg">
+                        <h3>상품명</h3>
+                        <h4>상품가격</h4>
+                    </a>
+                </li>
+                <li class="best_item">
+                    <a href="/ProductPage">
+                        <img src="/Images/pic01.jpg">
+                        <h3>상품명</h3>
+                        <h4>상품가격</h4>
+                    </a>
+                </li>
+                <li class="best_item">
+                    <a href="/ProductPage">
+                        <img src="/Images/pic01.jpg">
+                        <h3>상품명</h3>
+                        <h4>상품가격</h4>
+                    </a>
+                </li>
+                <li class="best_item">
+                    <a href="/ProductPage">
+                        <img src="/Images/pic01.jpg">
+                        <h3>상품명</h3>
+                        <h4>상품가격</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="footer_wrap">
+            <div id="footer_left">
+                <div>
+                    <h2>고객 행복 센터</h2>
+                    <div>
+                        <div>
+                            <h3>
+                            <span class="footer_span">1644-1107</span>
+                            </h3>
+                            <dl class="footer_dl">
+                                <dt>365고객센터</dt>
+                                <dd>오전7시~오후7시</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>
+                        <span class="footer_span">카카오톡 문의</span>
+                        </h3>
+                        <dl class="footer_dl">
+                            <dt>365고객센터</dt>
+                            <dd>오전7시~오후7시</dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <h3>
+                        <span class="footer_span">1:1문의</span>
+                        </h3>
+                        <dl class="footer_dl">
+                            <dt>24시간 접수 가능</dt>
+                            <dd>고객센터 운영시간에 순차적으로 답변드리겠습니다.</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_right">
+                <img src="/Images/footer_example_img.jpg" width="700px" height="240px">
+            </div>
+        </div>
+    </div>
+    <!-- 메뉴바 fixed -->
+    <script src="/re_main/menubar_fixed.js"></script>
+</body>
+</html>

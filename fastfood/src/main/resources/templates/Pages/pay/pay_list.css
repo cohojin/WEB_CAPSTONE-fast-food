@@ -1,0 +1,43 @@
+h2 {
+  text-align: center;
+}
+h3 {
+  border-bottom: 1px solid black;
+}
+li {
+  list-style: none;
+}
+.pay_arr {
+  text-align: left;
+  padding-bottom: 15px;
+}
+/* 결제 상품 */
+#pay_product_container {
+  display: flex;
+}
+.pay_product_items {
+  flex-grow: 1;
+  /* text-align: center; */
+}
+.pay_product_padding {
+  padding-top: 25px;
+  text-align: center;
+}
+/* table */
+#pay_wrap {
+}
+#pay_info_wrap {
+}
+#pay_info {
+  text-align: center;
+}
+.input_size {
+  width: 332px;
+  height: 44px;
+  padding: 12px 16px;
+  margin: 10px;
+  border: 1px solid #ddd;
+}
+.pay_address {
+  text-align: left;
+}

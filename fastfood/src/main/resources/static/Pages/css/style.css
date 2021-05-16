@@ -64,7 +64,6 @@ body {
   font-size: 15px;
   display: flex;
   height: 30px;
-  padding-left: -600px;
 }
 .category_item {
   flex-grow: 1;
