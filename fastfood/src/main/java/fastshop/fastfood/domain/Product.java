@@ -18,7 +18,6 @@ public class Product {
     private Long product_id; // 상품번호
     private String p_name;
     private int price;
-    private int name_ID;
 
 
 

@@ -1,6 +1,7 @@
 package fastshop.fastfood.Repository;
 
 
+import fastshop.fastfood.domain.Member;
 import fastshop.fastfood.domain.Product;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
