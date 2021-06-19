@@ -1,0 +1,59 @@
+<!Doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Fast Food :: Main</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+    </style>
+    <link type="text/css" rel="stylesheet" href="/css/style.css">
+    <!-- 제이쿼리 메뉴바 고정 -->
+    <script src="/js/jquery/jquery.js"></script>
+
+</head>
+
+<body>
+<div th:replace="fragments/bodyHeader :: bodyHeader"/>
+    <div id="welcome_wrap"  class="allMargin">
+        <img src="/Images/welcome_title.jpg" width="100%">
+        <div id="welcome_content_wrap">
+            <h2 class="welcome_content_h2">FastFood</h2>
+            <p id="welcome_title">
+                ‘FastFood’라는 단어에는
+                가족을 이어주는 특별한 힘이 있습니다.
+            </p>
+            <p id="welcome_title_content">
+                하지만 바쁘게 살고 있는 현대인들에게 매일 정성스럽게 집밥을 준비하는 것은 결코 쉽지 않은 일이죠. <br>
+                그래서 우리는 생각했습니다. “사람들이 요리하고 식사하는 방식이 바뀐다면 집밥이 조금 더 행복해지지 않을까? ” <br>
+                힘 안들이고 직접 요리할 수 있도록, 맛있는 음식으로 가족을 식탁으로 부르도록, <br>
+                제철 재료로 맛을 낸 특별식을 집밥으로 즐길 수 있도록, 가족과의 행복한 시간만 남도록 <br>
+                모든 사람들이 셰프가 아니더라도 셰프처럼. 정성스럽게 준비된 식재료로 만든 요리키트로 쉽고 즐겁게
+                매일, 가족의 식탁에 특별한 집밥을 올려놓을 수 있게
+                <br>
+            <p id="welcome_title_content">
+                그래서 시작합니다.
+            </p>
+            </p>
+            <img src="/Images/welcome_img2.jpg" width="100%">
+            <p id="welcome_title">
+                FastFood의 믿음, 그리고 지켜야할 가치
+            </p>
+            <p id="welcome_title_content">
+                시작은 단순했지만 고민은 깊었습니다. 직원이 아닌 한 사람의 고객으로서도 오래도록 사랑할 수 있는 서비스를 만들고자 했기에, 상품을 검토할 때 '잘<br>
+                팔릴까'보다는 '내가 사고 싶은지'를 먼저 물었고, '많이 팔릴지'보다는 '많이 팔려야 마땅한지'를 고민했고, 단기적으로 이익을 추구하기보다는 장기적<br>
+                으로 생산자와 소비자 모두에게 옳은 일을 하기 위해 치열하게 고민하고 노력해 왔습니다.
+                <br>
+                그 과정에서 패스트푸드가 꼭 지키고자 했던 가치들을 공유합니다. 이 가치들은 지금까지 그래왔듯 앞으로도 컬리가 성장하는 과정에서 방향을 잃지 않도록 길<br>
+                을 밝혀주는 등대의 역할을 해줄 것이며, 동시에 패스트푸드의 파트너인 생산자,소비자,그리고 주주 여러분께 드리는 약속이기도 합니다.
+            </p>
+
+        </div>
+    </div>
+    </div>
+    <!-- 메뉴바 fixed -->
+    <script src="/js/menubar_fixed.js"></script>
+    <script src="/js/productCalc.js"></script>
+<div th:replace="fragments/footer :: footer" />
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>FastFood :: 회원가입</title>
+  <style type="text/css">
+    @import url("/css/style.css");
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+  </style>
+  <script src="/js/jquery/jquery.js"></script>
+  <script src="/js/menubar_fixed.js"></script>
+  <script src="/js/member_reg.js"></script>
+  <script src="/js/daumApi.js"></script>
+  <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+</head>
+
+<body>
+<div th:replace="fragments/s :: s"/>
+
+<div id="member_list_wrap">
+  <h2 style="text-align: center;">회원가입</h2>
+  <form role="form" action="/members/new" style="padding:100px;" th:object="${memberForm}" method="post">
+    <div class="form-group" >
+      <label class="member_txt" th:for="userid">아이디</label><br>
+      <input type="text" name="LogID" id="LogID" maxlength="15" th:field="*{userid}" class="form-control" placeholder="아이디를 입력하세요"
+             th:class="${#fields.hasErrors('userid')}? 'form-control fieldError' : 'form-control'">
+      <button type="button" class="btn_click" id="btnIDCheck">중복확인</button>
+      &nbsp;&nbsp;4~15자의 영문 대소문자와 숫자만 입력해주세요. 한글입력시 입력안됨
+      <p th:if="${#fields.hasErrors('userid')}"
+         th:errors="*{userid}">Incorrect date</p>
+    </div>
+    <script type="text/javascript">
+    btnIDCheck.onclick = function () {
+      var SC = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "+", "="];
+      var check_SC = 0;
+      var id_ge_check = 0;
+      var id_uc_check = 1;
+      var logidpass = document.getElementById("LogID").value;
+      var regType1 = /^[A-Za-z0-9+]*$/;
+
+      if (regType1.test(document.getElementById('LogID').value)) {
+        id_uc_check = 0;
+
+      }
+      else {
+        alert('아이디가 조건에 맞지 않습니다');
+      }
+      if (logidpass.length < 4) {
+        id_uc_check = 1;
+        window.alert('아이디는 특수문자 미포함 4글자 이상, 15글자 이하만 이용 가능합니다.');
+      }
+      for (var i = 0; i < SC.length; i++) {
+        if (logidpass.indexOf(SC[i]) != -1) {
+          check_SC = 1;
+        }
+      }
+      if (check_SC == 0 && id_ge_check == 0 && id_uc_check == 0) {
+        window.alert("확인 되었습니다.");
+      }
+      if (check_SC == 1) {
+        window.alert('특수문자가 들어가 있습니다.');
+      }
+
+     }
+
+    </script>
+    <div class="form-group">
+      <label class="member_txt" th:for="userpw">비밀번호</label><br>
+      <input type="password" id="password1"  oninput="handleOnInput(this)"
+             th:field="*{userpw}" class="form-control" placeholder="비밀번호를 입력하세요"
+             th:class="${#fields.hasErrors('userpw')}? 'form-control fieldError' : 'form-control'">
+      <p th:if="${#fields.hasErrors('userpw')}"
+         th:errors="*{userpw}">Incorrect date</p>
+    </div>
+
+    <label>
+      <label class="member_txt">비밀번호 확인</label><br>
+      <input id="password2" name="password2" type="password" oninput="handleOnInput(this)">&nbsp;&nbsp;
+      <button type ="button" class="btn_click" id="btnCheck">확인</button>
+      <div id="checkCircle"></div>
+      <p id="checkText"></p>
+    </label>
+    <script type="text/javascript">
+      function handleOnInput(e) {
+   e.value = e.value.replace(/[0-9]//[a-zA-Z]/ig, '')
+
+}
+window.onload = function () {
+  // pwd1 과 pwd2를 text비교
+  // 확인 버튼에 클릭 이벤트 처리하기
+  var btnCheck = document.getElementById("btnCheck");
+
+
+  btnCheck.onclick = function () {
+    //checkCircle, checkText 속성변경
+    var SC = ["!", "@", "#", "$", "%", "^", "&", "*"];
+    var check_SC = 0;
+    var pass1 = document.getElementById('password1').value;
+    var pass2 = document.getElementById('password2').value;
+    var checkCircle = document.getElementById("checkCircle");
+    var checkText = document.getElementById("checkText");
+
+    if (pass1.length < 6 || pass1.length > 16) {
+      window.alert('비밀번호는 특수문자 포함 6글자 이상, 16글자 이하만 이용 가능합니다.');
+      document.getElementById('password1').value = '';
+    }
+    for (var i = 0; i < SC.length; i++) {
+      if (pass1.indexOf(SC[i]) != -1) {
+        check_SC = 1;
+      }
+    }
+    if (check_SC == 0) {
+      window.alert('!,@,#,$,%,^,&,* 의 특수문자가 들어가 있지 않습니다.')
+      document.getElementById('password1').value = '';
+    }
+
+    //if 문으로 조건 검색
+    if (pass1 == pass2) {
+      //비밀번호 입력창이 같으면
+      checkCircle.style.backgroundColor = "green";
+      checkText.innerHTML = "비밀번호가 일치 합니다. ";
+    }
+    else {
+      //비밀번호 입력창이 다르면
+      checkCircle.style.backgroundColor = "red";
+      checkText.innerHTML = "비밀번호가 일치하지 않습니다.";
+      alert('비밀번호가 일치하지 않습니다.');
+    }
+  }
+}
+
+    </script>
+    <div class="form-group">
+      <label class="member_txt" th:for="name">이름</label><br>
+      <input type="text" th:field="*{name}" class="form-control" placeholder="이름을 입력하세요"
+             th:class="${#fields.hasErrors('name')}? 'form-control fieldError' : 'form-control'">
+      <p th:if="${#fields.hasErrors('name')}"
+         th:errors="*{name}">Incorrect date</p>
+    </div>
+    <div class="form-group">
+      <label class="member_txt" th:for="zipcode">우편번호</label>&nbsp;&nbsp;
+      <input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
+      <input type="text" id="sample4_postcode" th:field="*{zipcode}" class="form-control" placeholder="우편번호를 입력하세요"
+             th:class="${#fields.hasErrors('zipcode')}? 'form-control fieldError' : 'form-control'">
+      <p th:if="${#fields.hasErrors('zipcode')}"
+         th:errors="*{zipcode}">Incorrect date</p>
+    </div>
+    <div class="form-group">
+      <label class="member_txt" th:for="city">도시</label><br>
+      <input type="text" id="sample4_roadAddress" th:field="*{city}" class="form-control"placeholder="도시를 입력하세요"
+             th:class="${#fields.hasErrors('city')}? 'form-control fieldError' : 'form-control'">
+      <p th:if="${#fields.hasErrors('city')}"
+         th:errors="*{city}">Incorrect date</p>
+    </div>
+    <div class="form-group">
+      <label class="member_txt" th:for="street">상세주소</label><br>
+      <input type="text" id="sample4_jibunAddress" th:field="*{street}" class="form-control" placeholder="거리를 입력하세요"
+             th:class="${#fields.hasErrors('street')}? 'form-control fieldError' : 'form-control'">
+      <p th:if="${#fields.hasErrors('street')}"
+         th:errors="*{street}">Incorrect date</p>
+    </div>
+
+    <div class="form-group">
+      <label class="member_txt" th:for="tel">전화번호</label><br>
+      <label><input type="text" id="phoneNum" maxlength="13" th:field="*{tel}" class="form-control" placeholder="전화번호를 입력하세요"
+                    th:class="${#fields.hasErrors('tel')}? 'form-control fieldError' : 'form-control'">
+        &nbsp;&nbsp;'-' 없이 입력해주세요(자동생성)</label>
+      <p th:if="${#fields.hasErrors('tel')}"
+         th:errors="*{tel}">Incorrect date</p>
+    </div>
+    <script type="text/javascript">
+      var autoHypenPhone = function (str) {
+        str = str.replace(/[^0-9]/g, '');
+        var tmp = '';
+        if (str.length < 4) {
+          return str;
+        } else if (str.length < 7) {
+          tmp += str.substr(0, 3);
+          tmp += '-';
+          tmp += str.substr(3);
+          return tmp;
+        } else if (str.length < 11) {
+          tmp += str.substr(0, 3);
+          tmp += '-';
+          tmp += str.substr(3, 3);
+          tmp += '-';
+          tmp += str.substr(6);
+          return tmp;
+        } else {
+          tmp += str.substr(0, 3);
+          tmp += '-';
+          tmp += str.substr(3, 4);
+          tmp += '-';
+          tmp += str.substr(7);
+          return tmp;
+        }
+
+        return str;
+      }
+      var phoneNum = document.getElementById('phoneNum');
+
+      phoneNum.onkeyup = function () {
+        console.log(this.value);
+        this.value = autoHypenPhone(this.value);
+      }
+
+      // /////////////////////////////////
+      var sub_check = 0;
+
+      bt_submit.onclick = function () {
+        if (sub_check == 0) {
+          alert("회원가입을 완료했습니다.");
+        }
+      }
+    </script>
+
+    <button type="submit" class="btn btn-primary btn_login">회원가입</button>
+  </form>
+
+  <br><br><br><br><br><br><br><br><br><br>
+
+<div th:replace="fragments/footer :: footer" />
+
+</div>
+</body>
+
+
+</html>

@@ -1,0 +1,75 @@
+<!Doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Fast Food :: 상품 설명 페이지</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+    </style>
+    <link type="text/css" rel="stylesheet" href="/css/style.css">
+    <!-- 제이쿼리 메뉴바 고정 -->
+    <script src="/js/jquery/jquery.js"></script>
+
+</head>
+
+<body>
+<div th:replace="fragments/bodyHeader :: bodyHeader"/>
+    <div id="basket_wrap" class="allMargin">
+        <h2>장바구니</h2>
+        <div class="basket_content_container">
+            <div class="basket_content_items">
+                <ul class="basket_list_container">
+                    <li class="basket_list_items">
+                        <label id="basket_label">
+                            <input type="checkbox" name="basket_items" id="basket_check">
+                        </label>
+                    </li>
+                    <li class="basket_list_items">
+                        <img src="/Images/pic01.jpg" width="60px" height="78pxs">
+                    </li>
+                    <li class="basket_list_items">
+                        상품이름이 들어갑니다.
+                    </li>
+                    <li class="basket_list_items">
+                        <button type="button" id="basket_minus">
+                            <img src="/Images/minus.png" width="15px" height="15px">
+                        </button>
+                        <span id="basket_count">1</span>
+                        <button type="button" id="basket_plus">
+                            <img src="/Images/plus.png" width="15px" height="15px">
+                        </button>
+                    </li>
+                    <li class="basket_list_items">
+                        <span class="basket_money">3000</span><span>원</span>
+                    </li>
+                    <li class="basket_list_items">
+                        <span>
+                            <input type="button" value="X" id="basket_remove">
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="basket_content_items">
+                <ul>
+                    <li class="basket_payment_items">상품 금액:<span class="basket_money">3000</span><span>원</span></li>
+                    <li class="basket_payment_items">상품 할인 금액:0원</li>
+                    <li class="basket_payment_items">배송비 :<span class="delivery_money">3000</span>원</li>
+                    <li class="basket_payment_items">총 금액:<span class="basket_money">0</span><span>원</span></li>
+                    <li class="basket_payment_items">
+                        <a href="/html/Pay.html">
+                            <input type="button" value="주문하기" id="basket_pay_order">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 메뉴바 fixed -->
+    <script src="/js/menubar_fixed.js"></script>
+    <!-- <script src="/js/productCalc.js"></script> -->
+    <script src="/js/basket_items.js"></script>
+<div th:replace="fragments/footer :: footer" />
+</body>
+
+</html>

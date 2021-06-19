@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>
+    Fast Food :: 마이페이지
+  </title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+  </style>
+  <link type="text/css" rel="stylesheet" href="/css/style.css">
+  <!-- 제이쿼리 메뉴바 고정 -->
+  <script src="/js/jquery/jquery.js"></script>
+
+</head>
+
+<body>
+<div th:replace="fragments/bodyHeader :: bodyHeader"/>
+  <!-- quick nav -->
+  <div id="quick">
+    <div>
+      <div id="quick_img">
+        <a href="#">
+          <img src="/Images/pic01.jpg" width="80px" height="100px">
+        </a>
+      </div>
+      <div id="quick_side">
+        <a href="#" class="quick_link">등급혜택</a>
+        <a href="#" class="quick_link">레시피</a>
+        <a href="#" class="quick_link">장바구니</a>
+      </div>
+    </div>
+  </div>
+  <!--mypage_list -->
+  <div id="delivery_wrap" class="allMargin">
+    <div id="delivery_list">
+      <ul class="delivery_container">
+        <li class="delivery_items">
+          <img src="/Images/myPage_basket.png">
+          <span class="delivery_items_contents" style="padding-left: 20px;">주문접수</span>
+          <img src="/Images/myPage_arrowRight.png" id="delivery_right">
+        </li>
+        <li class="delivery_items">
+          <img src="/Images/myPage_credit.png">
+          <span class="delivery_items_contents">결제완료</span>
+          <img src="/Images/myPage_arrowRight.png" id="delivery_right">
+        </li>
+        <li class="delivery_items">
+          <img src="/Images/myPage_gift.png">
+          <span class="delivery_items_contents">상품준비중</span>
+          <img src="/Images/myPage_arrowRight.png" id="delivery_right">
+        </li>
+        <li class="delivery_items">
+          <img src="/Images/myPage_truck.png">
+          <span class="delivery_items_contents">배송준비</span>
+          <img src="/Images/myPage_arrowRight.png" id="delivery_right">
+        </li>
+        <li class="delivery_items">
+          <img src="/Images/myPage_note.png">
+          <span class="delivery_items_contents">배송완료</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="delivery_list_wrap" class="allMargin">
+    <div id="delivery_quick_wrap" class="delivery_content_wrap">
+      <h2 class="quick_title">마이페이지</h2>
+      <div id="delivery_quick_contents">
+        <ul id="delivery_quick_container">
+          <li class="delivery_quick_list">
+            <a href="/MyPage">
+              마이페이지
+            </a>
+            <img src="/Images/myPage_quick_right.png" id="delivery_quick_right" width="20px" height="20px">
+          </li>
+          <li class="delivery_quick_list">
+            <a href="/MyPage">
+              주문내역
+            </a>
+            <img src="/Images/myPage_quick_right.png" id="delivery_quick_right" width="20px" height="20px">
+          </li>
+          <li class="delivery_quick_list">
+            <a href="/MyPageDelivery">
+              배송지관리
+            </a>
+            <img src="/Images/myPage_quick_right.png" id="delivery_quick_right" width="20px" height="20px">
+          </li>
+          <li class="delivery_quick_list">
+            <a href="/MyPageCoupon">
+              쿠폰
+            </a>
+            <img src="/Images/myPage_quick_right.png" id="delivery_quick_right" width="20px" height="20px">
+          </li>
+          <li class="delivery_quick_list">
+            상품등록
+            <img src="/Images/myPage_quick_right.png" id="delivery_quick_right" width="20px" height="20px">
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="delivery_content_wrap">
+      <h2 class="quick_title">주문내역</h2>
+      <hr>
+      <div id="delivery_content_list">
+        <ul class="delivery_content_container">
+          <li class="delivery_content_items">주문 내역이 없습니다.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- 메뉴바 fixed -->
+  <script src="/js/menubar_fixed.js"></script>
+<div th:replace="fragments/footer :: footer" />
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>Fast Food :: 결제 페이지</title>
+  <link type="text/css" rel="stylesheet" href="/css/style.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="https://service.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+
+  <SCRIPT src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></SCRIPT>
+</head>
+
+<body>
+<div th:replace="fragments/bodyHeader :: bodyHeader"/>
+  <div id="pay_wrap" class="allMargin">
+    <h2 class="pay_h2">주문서</h2>
+    <h3 class="pay_arr">결제상품</h3>
+    <div id="pay_product_wrap">
+      <div id="pay_product_container">
+        <div class="pay_product_items">
+          <img src="/Images/new_img/육지도 생참치회 500g.jpg" width="60px" height="78px">
+        </div>
+        <div class="pay_product_items pay_product_padding">
+          육지도 생참치회 500g
+        </div>
+        <div class="pay_product_items pay_product_padding">
+          <span id="product_count">1 개</span>
+        </div>
+        <div class="pay_product_items pay_product_padding">
+          96000원
+        </div>
+      </div>
+    </div>
+    <h3 class="pay_arr">주문자 정보</h3>
+    <form id="pay_info_wrap">
+      <div id="pay_info">
+        <table>
+          <tbody>
+            <tr>
+              <th>보내는분</th>
+              <td>
+                <input type="text" placeholder="이름을 입력해주세요" class="input_size">
+              </td>
+            </tr>
+            <tr>
+              <th>휴대폰</th>
+              <td>
+                <input type="text" placeholder="숫자만 입력해주세요" class="input_size">
+              </td>
+            </tr>
+            <tr>
+              <th>이메일</th>
+              <td>
+                <input type="text" placeholder="예)sungkonghoe@sungkonghoe.com" class="input_size">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="pay_arr">배송정보</h3>
+        <div class="pay_address">
+          <input type="text" id="sample4_postcode" placeholder="우편번호" class="input_size">
+          <input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기">
+        </div>
+        <div class="pay_address">
+          <input type="text" id="sample4_roadAddress" placeholder="도로명주소" class="input_size">
+          <input type="text" id="sample4_jibunAddress" placeholder="지번주소" class="input_size">
+          <span id="guide" style="color:#999;display:none"></span>
+        </div>
+        <div class="pay_address">
+          <input type="text" id="sample4_detailAddress" placeholder="상세주소" class="input_size">
+          <input type="text" id="sample4_extraAddress" placeholder="참고항목" class="input_size">
+        </div>
+      </div>
+      <div id="pay_credit_wrap">
+        <h3 class="pay_arr">결제수단</h3>
+        <div id="pay_credit">
+          <table>
+            <tbody>
+              <tr>
+                <th>카카오페이</th>
+                <td>
+                  <label>
+                    <input type="radio" name="카카오페이">
+                    <img src="/Images/kakao_pay.jpg" width="50px" height="50px">
+                  </label>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="personnal_wrap">
+            <h3 class="pay_arr">개인정보 수집/제공</h3>
+            <div style="text-align: left;">
+              <ul>
+                <li>
+                  <input type="radio" name="동의">
+                  <span class="personnal_span2">결제 진행 필수 동의</span>
+                </li>
+                <li>
+                  <sapn class="personnal_span">개인정보 수집/이용 및 처리 동의 (필수) </sapn>
+                </li>
+                <li>
+                  <span class="personnal_span">결제대행 서비스 약관 동의 (필수)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div style="text-align: center;">
+            <input type="button" value="결제하기" id="check_module">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- 다음 주소 api -->
+  <script src="/js/daumApi.js"></script>
+  <!-- 아임포트 api -->
+  <script src="/js/pay.js"></script>
+  <!-- header_fix -->
+  <!-- <script src="/js/menubar_fixed.js"></script> -->
+<div th:replace="fragments/footer :: footer" />
+</body>
+
+</html>

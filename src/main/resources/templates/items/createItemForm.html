@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<style type="text/css">
+    @import url("/css/style.css");
+</style>
+<head th:replace="fragments/header :: header" />
+<body>
+<div class="container">
+  <div th:replace="fragments/bodyHeader :: bodyHeader"/>
+  <form th:action="@{/items/new}" th:object="${form}" method="post">
+    <div class="form-group">
+      <label th:for="name">응급상황</label>
+      <input type="text" th:field="*{name}" class="form-control"
+             placeholder="이름을 입력하세요">
+    </div>
+    <div class="form-group">
+      <label th:for="price">날짜</label>
+      <input type="number" th:field="*{price}" class="form-control"
+             placeholder="가격을 입력하세요">
+    </div>
+    <div class="form-group">
+      <label th:for="stockQuantity">응급상황 코드</label>
+      <input type="number" th:field="*{stockQuantity}" class="formcontrol" placeholder="수량을 입력하세요">
+    </div>
+    <div class="form-group"> <label th:for="author">응급내용</label>
+      <input type="text" th:field="*{author}" class="form-control"
+             placeholder="저자를 입력하세요">
+    </div>
+    <div class="form-group">
+      <label th:for="isbn">응급팀 코드</label>
+      <input type="text" th:field="*{isbn}" class="form-control"
+             placeholder="ISBN을 입력하세요">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br/>
+  <div th:replace="fragments/footer :: footer" />
+</div> <!-- /container -->
+</body>
+</html>

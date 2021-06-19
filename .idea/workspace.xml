@@ -4,32 +4,195 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be245f44-f72e-48a1-ba9b-c4a0afef50f3" name="Default Changelist" comment="" />
+    <list default="true" id="d9419c7e-50fc-48bf-878a-bd4d09c26fde" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1s3lvxbIAjNpFOP9RR6pMQbX509" />
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Enum" />
+        <option value="JUnit4 Test Class" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1sxz1xkmitGLaapeUrvAOhiTND2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/Pages/html" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="FastFoodShop.FastFood.Controller" />
+      <recent name="FastFoodShop.FastFood.domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\harry\Desktop\독수리\FastFood\FastFood\src\main\resources\templates\Pages\html" />
+      <recent name="C:\Users\harry\Desktop\독수리\FastFood\FastFood\src\main\resources\templates\Pages\SaPages" />
+      <recent name="C:\Users\harry\Desktop\독수리\FastFood\FastFood\src\main\resources\templates\fragments" />
+      <recent name="C:\Users\harry\Desktop\독수리\FastFood\FastFood\src\main\resources\static\js" />
+      <recent name="C:\Users\harry\Desktop\독수리\FastFood\FastFood\src\main\resources\static\css" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\harry\Desktop\독수리\FastFood\FastFood\src\main\resources\templates\Pages\SaPages" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="FastFoodShop.FastFood.service" />
+      <recent name="FastFoodShop.FastFood" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FastFoodApplication">
+    <configuration name="FastFoodApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FastFoodShop.FastFood.FastFoodApplication" />
+      <module name="FastFood.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="FastFoodShop.FastFood.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FastFood" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MemberServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FastFood.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="FastFoodShop.FastFood.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="FastFoodShop.FastFood.service" />
+      <option name="MAIN_CLASS_NAME" value="FastFoodShop.FastFood.service.MemberServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceTest.상품주문" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FastFood.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="FastFoodShop.FastFood.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="FastFoodShop.FastFood.service" />
+      <option name="MAIN_CLASS_NAME" value="FastFoodShop.FastFood.service.OrderServiceTest" />
+      <option name="METHOD_NAME" value="상품주문" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="static.js in FastFood.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FastFood.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="static.js.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="static.js" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FastFoodApplication" />
+        <item itemvalue="Gradle.FastFood" />
+        <item itemvalue="JUnit.static.js in FastFood.main" />
+        <item itemvalue="JUnit.OrderServiceTest.상품주문" />
+        <item itemvalue="JUnit.MemberServiceTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="be245f44-f72e-48a1-ba9b-c4a0afef50f3" name="Default Changelist" comment="" />
-      <created>1620109388255</created>
+      <changelist id="d9419c7e-50fc-48bf-878a-bd4d09c26fde" name="Default Changelist" comment="" />
+      <created>1621828817256</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1620109388255</updated>
+      <updated>1621828817256</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

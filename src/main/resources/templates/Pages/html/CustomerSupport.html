@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>Fast Food :: 고객지원 페이지</title>
+  <link type="text/css" rel="stylesheet" href="/css/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+  </style>
+  <!-- 제이쿼리 메뉴바 고정 -->
+  <script src="/js/jquery/jquery.js"></script>
+</head>
+
+<body>
+<div th:replace="fragments/bodyHeader :: bodyHeader"/>
+  <div id="customer_wrap" class="allMargin">
+    <div id="customer_list_wrap">
+      <h2>자주하는 질문(FAQ)</h2>
+      <div class="customer_list">
+        <button class="customer_question" id="que-1" onclick="openCloseImg()">
+          <img src="/Images/question.png" width="50px" height="50px">
+          <span class="question_list">배송비는 얼마인가요?</span>
+          <img src="/Images/direction_top.png" width="50px" height="50px" class="question_top_img" id="top-1">
+          <!-- <img src="/Images/direction_bottom.png" width="50px" height="50px" class="question_bottom_img" id="bottom-1"> -->
+        </button>
+        <div class="customer_answer" id="ans-1">배송비는 3000원입니다.</div>
+      </div>
+
+      <div class="customer_list">
+        <button class="customer_question" id="que-2">
+          <img src="/Images/question.png" width="50px" height="50px">
+          <span>로그인이 안돼요.</span>
+          <img src="/Images/direction_top.png" width="50px" height="50px" class="question_top_img">
+        </button>
+        <div class="customer_answer" id="ans-2">
+          아이디 비밀번호 확인
+          로그인이 안되실 경우에는 "로그인" 페이지에 있는 아이디 찾기 또는 비밀번호 찾기를 이용해 주세요.
+        </div>
+      </div>
+
+      <div class="customer_list">
+        <button class="customer_question" id="que-3">
+          <img src="/Images/question.png" width="50px" height="50px">
+          <span>회원탈퇴는 어떻게 하나요?</span>
+          <img src="/Images/direction_top.png" width="50px" height="50px" class="question_top_img">
+        </button>
+        <div class="customer_answer" id="ans-3">
+          회원탈퇴는 고객님의 회원정보-> 회원정보 수정 페이지에서 신청할 수 있습니다.
+        </div>
+      </div>
+
+      <div class="customer_list">
+        <button class="customer_question" id="que-4">
+          <img src="/Images/question.png" width="50px" height="50px">
+          <span>회원정보를 변경하고 싶어요.</span>
+          <img src="/Images/direction_top.png" width="50px" height="50px" class="question_top_img">
+        </button>
+        <div class="customer_answer" id="ans-4">
+          일부 회원정보는 휴대폰 또는 아이핀을 통한 본인인증 후 정보변경 가능합니다.
+        </div>
+      </div>
+
+      <div class="customer_list">
+        <button class="customer_question" id="que-5">
+          <img src="/Images/question.png" width="50px" height="50px">
+          <span>재가입은 어떻게 하나요?</span>
+          <img src="/Images/direction_top.png" width="50px" height="50px" class="question_top_img">
+        </button>
+        <div class="customer_answer" id="ans-5">
+          재가입 규정을 확인하신 후 회원가입 페이지를 통해 재가입이 가능합니다.
+        </div>
+      </div>
+
+      <div class="customer_list">
+        <button class="customer_question" id="que-6">
+          <img src="/Images/question.png" width="50px" height="50px">
+          <span>묶음 배송이 가능한가요?</span>
+          <img src="/Images/direction_top.png" width="50px" height="50px" class="question_top_img">
+        </button>
+        <div class="customer_answer" id="ans-6">
+          주문번호 별로 포장이 되며 주문번호 별 배송비가 발생합니다.
+        </div>
+      </div>
+
+      <div class="customer_list">
+        <button class="customer_question" id="que-7">
+          <img src="/Images/question.png" width="50px" height="50px">
+          <span>적립금 유효기간은 어떻게 확인하나요?</span>
+          <img src="/Images/direction_top.png" width="50px" height="50px" class="question_top_img">
+        </button>
+        <div class="customer_answer" id="ans-7">
+          적립금 유효기간은 마이페이지내에서 확인가능합니다.
+        </div>
+      </div>
+
+      <div class="customer_list">
+        <button class="customer_question" id="que-8">
+          <img src="/Images/question.png" width="50px" height="50px">
+          <span>교환반품 기준은 어떻게 되나요?</span>
+          <img src="/Images/direction_top.png" width="50px" height="50px" class="question_top_img">
+        </button>
+        <div class="customer_answer" id="ans-8">
+          상품을 받은 날로부터 3일이내에 가능합니다.
+        </div>
+      </div>
+
+      <div class="customer_list">
+        <button class="customer_question" id="que-9">
+          <img src="/Images/question.png" width="50px" height="50px">
+          <span>할인된 금액은 어디서 확인하나요?</span>
+          <img src="/Images/direction_top.png" width="50px" height="50px" class="question_top_img">
+        </button>
+        <div class="customer_answer" id="ans-9">
+          할인된 금액은 최종 결제시에 확인하실수있습니다.
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- 메뉴바 고정 -->
+  <script src="/js/menubar_fixed.js"></script>
+  <!-- 대답 숨기기 -->
+  <script src="/js/answer_hide.js"></script>
+<div th:replace="fragments/footer :: footer" />
+</body>
+
+</html>

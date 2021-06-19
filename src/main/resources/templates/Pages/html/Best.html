@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Fast Food :: 베스트 페이지</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+    </style>
+    <link type="text/css" rel="stylesheet" href="/css/style.css">
+    <!-- 제이쿼리 메뉴바 고정 -->
+    <script src="/js/jquery/jquery.js"></script>
+
+</head>
+
+<body>
+<div th:replace="fragments/bodyHeader :: bodyHeader"/>
+    <!-- quick nav -->
+    <div id="quick">
+        <div>
+            <div id="quick_img">
+                <a href="#">
+                    <img src="/Images/pic01.jpg" width="80px" height="100px">
+                </a>
+            </div>
+            <div id="quick_side">
+                <a href="#" class="quick_link">등급혜택</a>
+                <a href="#" class="quick_link">레시피</a>
+                <a href="#" class="quick_link">장바구니</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 베스트 상품 배치 -->
+    <div id="best_list_wrap" class="allMargin">
+        <ul class="best_container">
+            <li class="best_item">
+                <a href="ProductPage">
+                    <img src="/Images/best_img/KF365 DOLE 실속 바나나 1.1kg.jpg" class="imgHover">
+                    <h3>[KF365] DOLE 실속 바나나 1.1kg</h3>
+                    <h4>2760원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="ProductPage">
+                    <img src="/Images/best_img/KF365 방울토마토 500g.jpg" class="imgHover">
+                    <h3>[KF365] 방울토마토 500g</h3>
+                    <h4>3980원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="/loginrlaalsgh9511/item/BP1">
+                    <img src="/Images/best_img/국산콩 두부 300g.jpg" class="imgHover">
+                    <h3>국산콩 두부 300g</h3>
+                    <h4>1710원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="/loginrlaalsgh9511/item/BP2">
+                    <img src="/Images/best_img/남향푸드또띠아 간편 간식 브리또 10종.jpg" class="imgHover">
+                    <h3>[남향푸드또띠아] 간편 간식 브리또 10종</h3>
+                    <h4>2900원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="ProductPage">
+                    <img src="/Images/best_img/상하목장 슬로우키친 파스타소스 3종.jpg" class="imgHover">
+                    <h3>[상하목장] 슬로우키친 파스타소스 3종</h3>
+                    <h4>2125원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="/loginrlaalsgh9511/item/BP3">
+                    <img src="/Images/best_img/생활공작소 고무장갑 4종.jpg" class="imgHover">
+                    <h3>[생활공작소] 고무장갑 4종</h3>
+                    <h4>2200원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="/loginrlaalsgh9511/item/BP4">
+                    <img src="/Images/best_img/숭의가든 한돈 목살 양념 구이.jpg" class="imgHover">
+                    <h3>[숭의가든] 한돈 목살 양념 구이</h3>
+                    <h4>13900원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="ProductPage">
+                    <img src="/Images/best_img/썬키스트 고당도 오렌지.jpg" class="imgHover">
+                    <h3>[썬키스트] 고당도 오렌지 </h3>
+                    <h4>990원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="ProductPage">
+                    <img src="/Images/best_img/썬키스트 팬시 레몬 1개.jpg" class="imgHover">
+                    <h3>[썬키스트] 팬시 레몬 1개</h3>
+                    <h4>567원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="ProductPage">
+                    <img src="/Images/best_img/어게인리프레쉬 샐러드 5종.jpg" class="imgHover">
+                    <h3>[어게인리프레쉬] 샐러드 5종</h3>
+                    <h4>5900원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="ProductPage">
+                    <img src="/Images/best_img/오늘식빵 우유 듬뿍 식빵.jpg" class="imgHover">
+                    <h3>[오늘식빵] 우유 듬뿍 식빵</h3>
+                    <h4>2700원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="ProductPage">
+                    <img src="/Images/best_img/올반 소불고기.jpg" class="imgHover">
+                    <h3>[올반] 소불고기 </h3>
+                    <h4>5900원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="ProductPage">
+                    <img src="/Images/best_img/자몽 1개.jpg" class="imgHover">
+                    <h3>자몽 1개</h3>
+                    <h4>1710원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="ProductPage">
+                    <img src="/Images/best_img/일상소 다짐육 200g (냉장).jpg" class="imgHover">
+                    <h3>[일상소] 다짐육 200g (냉장)</h3>
+                    <h4>7500원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="/loginrlaalsgh9511/item/mackerel">
+                    <img src="/Images/best_img/제주창해수산 제주 고등어살.jpg" class="imgHover">
+                    <h3>[제주창해수산] 제주 고등어살</h3>
+                    <h4>3200원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="/loginrlaalsgh9511/item/BP5">
+                    <img src="/Images/best_img/청양고추 2종.jpg" class="imgHover">
+                    <h3>청양고추 2종</h3>
+                    <h4>841원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="best_item">
+                    <img src="/Images/best_img/푸드렐라 통통살 가라아게.jpg" class="imgHover">
+                    <h3>[푸드렐라] 통통살 가라아게</h3>
+                    <h4>2850원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="ProductPage">
+                    <img src="/Images/best_img/프레드 프로틴 케이크 8종.jpg" class="imgHover">
+                    <h3>[프레드] 프로틴 케이크 8종</h3>
+                    <h4>4500원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="ProductPage">
+                    <img src="/Images/best_img/햇 양파 1.5kg.jpg" class="imgHover">
+                    <h3>햇 양파 1.5kg</h3>
+                    <h4>3990원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="ProductPage">
+                    <img src="/Images/best_img/행복한콩 모닝두부 3종.jpg" class="imgHover">
+                    <h3>[행복한콩] 모닝두부 3종</h3>
+                    <h4>1300원</h4>
+                </a>
+            </li>
+            <li class="best_item">
+                <a href="ProductPage">
+                    <img src="/Images/best_img/홍대쭈꾸미 주꾸미 볶음 300g.jpg" class="imgHover">
+                    <h3>[홍대쭈꾸미] 주꾸미 볶음 300g</h3>
+                    <h4>5530원</h4>
+                </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <!-- 메뉴바 fixed -->
+    <script src="/js/menubar_fixed.js"></script>
+<div th:replace="fragments/footer :: footer" />
+</body>
+
+</html>

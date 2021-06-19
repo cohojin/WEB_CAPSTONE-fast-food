@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header :: header" />
+<style type="text/css">
+    @import url("/css/style.css");
+
+     table {
+    width: 100%;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #444444;
+    padding: 10px;
+  }
+</style>
+<body>
+<div class="container">
+<h2>응급 알람 일지</h2>
+  <div>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>응급명</th>
+        <th>응급날짜</th>
+        <th>응급상황 코드</th>
+        <th>응급내용</th>
+        <th>구급차 번호</th>
+        <th>위치</th>
+
+      </tr>
+      </thead>
+      <tbody> <tr th:each="item : ${items}">
+        <td th:text="${item.id}"></td>
+        <td th:text="${item.name}"></td>
+        <td th:text="${item.price}"></td>
+        <td th:text="${item.stockQuantity}"></td>
+        <td th:text="${item.MName}"></td>
+        <td th:text="${item.MNum}"></td>
+        <td>
+          <a href="#" th:href="@{/items/{id}/edit (id=${item.id})}"
+             class="btn btn-primary" role="button">사용자 거주지 확인</a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div th:replace="fragments/footer :: footer"/>
+</div> <!-- /container -->
+</body>
+</html>

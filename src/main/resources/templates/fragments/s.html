@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<style type="text/css">
+    @import url("/css/style.css");
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+  </style>
+<link href="/css/style.css" rel="stylesheet">
+<script src="/js/jquery/jquery.js"></script>
+<script src="/js/menubar_fixed.js"></script>
+<script src="/js/member_reg.js"></script>
+<script src="/js/daumApi.js"></script>
+<div class="header" th:fragment="s">
+  <script src="/js/menubar_fixed.js"></script>
+  <div id="main_wrap">
+    <div id="login_wrap">
+      <ul>
+        <li>
+          <a href="members/new">
+            회원가입
+          </a>
+        </li>
+        <li>
+          <a href="members/login">
+            로그인
+          </a>
+        </li>
+        <li>
+          <a href="/CustomerSupport">
+            고객센터
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- logo 만들기 -->
+    <div id="logo_wrap">
+      <a href="/">
+        <img src="/Images/logo.png" width="100px" height="100px">
+      </a>
+    </div>
+    <!-- 메뉴바 fixed로 고정 javascript 추가 부분-->
+    <div id="category_wrap">
+      <ul class="category_container">
+        <li class="category_item">
+          <a href="/Welcome">
+            <span>
+              Welcome
+            </span>
+          </a>
+        </li>
+
+        <li class="category_item">
+          <a href="/NewProductPage">
+            <span>
+              신상품
+            </span>
+          </a>
+        </li>
+        <li class="category_item">
+          <a href="/Best">
+            <span>
+              베스트
+            </span>
+          </a>
+        </li>
+        <li class="category_item">
+          <a href="/MonthMoney">
+            <span>
+              이달의돈쭐
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</html>
